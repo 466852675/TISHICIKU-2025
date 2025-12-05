@@ -1,59 +1,41 @@
 {
     "mcpServers": {
+        "Sequential Thinking": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-sequential-thinking"
+            ],
+            "env": {},
+            "fromGalleryId": "byted-mcp-volcengine.3rd_party_mcp_server_sequential_thinking"
+        },
+        "context7": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@upstash/context7-mcp@latest"
+            ],
+            "env": {},
+            "fromGalleryId": "byted-mcp-volcengine.3rd_party_mcp_server_context7"
+        },
+        "Chrome DevTools MCP": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "chrome-devtools-mcp@latest"
+            ],
+            "env": {},
+            "fromGalleryId": "byted-mcp.chrome-devtools-mcp"
+        },
         "mcp-server-chart": {
             "type": "sse",
             "url": "https://mcp.api-inference.modelscope.net/fcc00574ee4a4d/sse"
         },
-        "MCP-ECharts": {
-            "type": "sse",
-            "url": "https://mcp.api-inference.modelscope.net/6e398f095c2247/sse"
-        },
-        "context7-mcp": {
-            "type": "sse",
-            "url": "https://mcp.api-inference.modelscope.net/a69a424354e14a/sse"
-        },
-        "edgeone-pages-mcp": {
-            "type": "sse",
-            "url": "https://mcp.api-inference.modelscope.net/a771f6fc980148/sse"
-        },
-        "excel": {
-            "command": "python",
+        "playwright": {
             "args": [
-                "-m",
-                "excel_mcp",
-                "stdio"
+                "@playwright/mcp@latest"
             ],
-            "cwd": "C:\\Users\\hangy\\AppData\\Local\\Programs\\Trae CN\\mcp\\excel-mcp-server-main",
-            "env": {
-                "EXCEL_FILES_PATH": "C:\\Users\\hangy\\Desktop\\【Trae】案例\\表格文件类"
-            }
-        },
-        "sequentialthinking": {
-            "type": "sse",
-            "url": "https://mcp.api-inference.modelscope.net/15a0d844aa4d48/sse"
-        },
-        "chrome-devtools": {
-            "command": "npx",
-            "args": [
-                "chrome-devtools-mcp@latest"
-            ]
-        },
-        "amap-maps": {
-            "type": "sse",
-            "url": "https://mcp.api-inference.modelscope.net/18466d345f2841/sse"
-        },
-        "mcp": {
-            "type": "sse",
-            "url": "https://mcp.api-inference.modelscope.net/9fc0515ad17b47/sse"
-        },
-        "Playwright": {
-            "command": "npx",
-            "args": [
-                "-y",
-                "@executeautomation/playwright-mcp-server"
-            ],
-            "env": {},
-            "fromGalleryId": "byted-mcp-volcengine.3rd_party_mcp_server_playwright"
+            "command": "npx"
         }
     }
 }

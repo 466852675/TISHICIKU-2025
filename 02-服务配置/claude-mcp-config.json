@@ -123,29 +123,6 @@
         "devtools"
       ]
     },
-    "web-search-prime": {
-      "description": "智谱AI网络搜索MCP服务器，提供实时网络搜索、网页内容获取和信息检索功能",
-      "docs": "https://open.bigmodel.cn/dev/mcp#web-search-prime",
-      "enabled": true,
-      "homepage": "https://open.bigmodel.cn/dev/mcp",
-      "id": "web-search-prime",
-      "name": "web-search-prime",
-      "server": {
-        "headers": {
-          "Authorization": "0e39be73ed784889806e84d661e82687.iFSBtu4RN9wZcu8D"
-        },
-        "type": "http",
-        "url": "https://open.bigmodel.cn/api/mcp/web_search_prime/mcp"
-      },
-      "tags": [
-        "http",
-        "search",
-        "web",
-        "zhipu",
-        "realtime",
-        "retrieval"
-      ]
-    },
     "fetch": {
       "description": "通用 HTTP 请求工具，支持 GET/POST 等 HTTP 方法，适合快速请求接口/抓取网页数据",
       "docs": "https://github.com/modelcontextprotocol/servers/tree/main/src/fetch",
@@ -190,33 +167,6 @@
         "automation",
         "testing",
         "web"
-      ]
-    },
-    "zai-mcp-server": {
-      "description": "Z_AI智能体MCP服务器，提供AI助手相关的MCP功能，支持图像分析、视频理解",
-      "docs": "https://github.com/z-ai/mcp-server#readme",
-      "enabled": true,
-      "homepage": "https://github.com/z-ai/mcp-server",
-      "id": "zai-mcp-server",
-      "name": "zai-mcp-server",
-      "server": {
-        "args": [
-          "-y",
-          "@z_ai/mcp-server"
-        ],
-        "command": "npx",
-        "env": {
-          "Z_AI_API_KEY": "0e39be73ed784889806e84d661e82687.iFSBtu4RN9wZcu8D",
-          "Z_AI_MODE": "ZHIPU"
-        },
-        "type": "stdio"
-      },
-      "tags": [
-        "stdio",
-        "ai",
-        "assistant",
-        "zhipu",
-        "intelligent"
       ]
     },
     "spec-workflow": {

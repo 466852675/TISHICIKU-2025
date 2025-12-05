@@ -27,14 +27,14 @@
 │       ├── 📄 v2-system-prompt.md   # 增强版系统提示词
 │       └── 📄 v3-system-prompt.md   # 专业版系统提示词
 ├── 📁 02-服务配置/                    # MCP服务配置文件
-│   ├── 📄 trae-mcp-config.json      # ModelScope/Trae CN平台配置
-│   └── 📄 claude-mcp-config.json    # Claude/通用平台配置
+│   ├── 📄 claude-mcp-config.json    # Claude/通用平台配置
+│   └── 📄 Trae-mcp-config.json       # ModelScope/Trae CN平台配置
 ├── 📁 03-执行规则/                    # AI执行规则和约束
 │   ├── 📁 通用规则/                 # 通用执行规则
-│   │   ├── 📄 6A规则.md             # 6A执行原则
-│   │   └── 📄 上下文规则.md         # 上下文理解规则
-│   └── 📁 个人定制/                 # 个人化规则
-│       └── 📄 个人规则.md           # 个人工作风格配置
+│   │   └── 📄 个人规则.md           # 个人工作风格配置
+│   └── 📁 项目规则/                 # 项目特定规则
+│       ├── 📄 6A规则.md             # 6A执行原则
+│       └── 📄 上下文规则.md         # 上下文理解规则
 ├── 📁 04-提示词专家/                  # 专业提示词专家库
 │   ├── 📁 01-需求分析/              # 需求分析专家
 │   │   ├── 📄 需求生成专家.md       # 需求A单生成专家
@@ -57,12 +57,7 @@
 │       ├── 📄 PPT生成专家.md        # PPT生成专家
 │       ├── 📄 周报生成专家.md       # 工作周报生成
 │       ├── 📄 提示词生成专家.md     # 提示词优化专家
-│       └── 📁 网页生成专家/         # 网页生成专家
-│           ├── 📄 网页生成专家-1.md  # 基础版本
-│           └── 📄 网页生成专家-2.md  # 高级版本
-└── 📁 .spec-workflow/               # 规格驱动工作流系统
-    ├── 📁 templates/                # 默认文档模板
-    └── 📁 user-templates/           # 自定义模板目录
+│       └── 📄 网页生成专家.md       # 快速网页代码生成
 ```
 
 ---
@@ -83,7 +78,7 @@
 cp 02-服务配置/claude-mcp-config.json ~/.config/claude/mcp_settings.json
 
 # ModelScope/Trae CN用户
-cp 02-服务配置/trae-mcp-config.json ~/.config/claude/mcp_settings.json
+cp 02-服务配置/Trae-mcp-config.json ~/.config/claude/mcp_settings.json
 ```
 
 #### 2️⃣ 安装MCP服务依赖
@@ -123,18 +118,17 @@ npm install -g @modelcontextprotocol/server-playwright
 ### ⚙️ 2. 服务配置模块
 
 #### ModelScope/Trae CN平台服务
-- 📊 **图表服务**: mcp-server-chart、MCP-ECharts
-- 📚 **文档服务**: context7-mcp、deepwiki
-- 🤖 **自动化服务**: chrome-devtools、Playwright
-- 🗺️ **地图服务**: amap-maps
-- 📈 **数据处理**: excel服务
+- 📊 **图表服务**: mcp-server-chart
+- 📚 **文档服务**: context7
+- 🤖 **自动化服务**: Chrome DevTools MCP、playwright
+- 🧠 **智能工具**: Sequential Thinking
 
 #### Claude/通用平台服务
 - 🧠 **智能工具**: sequential-thinking、memory
-- 💻 **代码工具**: serena、context7
-- 🔍 **搜索服务**: web-search-prime、fetch
-- 🎬 **多媒体**: zai-mcp-server
-- 📝 **工作流**: spec-workflow
+- 💻 **代码工具**: serena
+- 🔍 **搜索服务**: fetch
+- 📚 **文档服务**: mcp-deepwiki、context7
+- 🤖 **自动化服务**: chrome-devtools、playwright
 
 ### 📏 3. 执行规则模块
 
@@ -196,8 +190,8 @@ npm install -g @modelcontextprotocol/server-playwright
 01-框架配置/react-admin/v3-system-prompt.md
 
 # 2. 配置执行规则
-03-执行规则/通用规则/6A规则.md
-03-执行规则/通用规则/上下文规则.md
+03-执行规则/项目规则/6A规则.md
+03-执行规则/项目规则/上下文规则.md
 
 # 3. 选择开发专家
 04-提示词专家/01-需求分析/PRD生成专家.md

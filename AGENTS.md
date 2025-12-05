@@ -12,7 +12,7 @@ This file provides guidance to agents when working with code in this repository.
 
 1. **01-框架配置/**: 框架系统提示词配置（React管理系统等）
 2. **02-服务配置/**: MCP（Model Context Protocol）服务配置文件
-3. **03-执行规则/**: AI执行规则和约束（6A原则、上下文规则等）
+3. **03-执行规则/**: AI执行规则和约束（项目规则包含6A原则、上下文规则等，通用规则包含个人规则）
 4. **04-提示词专家/**: 专业提示词专家库，涵盖需求分析、原型设计、测试验证、通用任务
 
 ## MCP服务配置
@@ -23,9 +23,11 @@ This file provides guidance to agents when working with code in this repository.
 npm install -g @modelcontextprotocol/server-sequential-thinking
 npm install -g @modelcontextprotocol/server-memory
 npm install -g mcp-deepwiki
-npm install -g @modelcontextprotocol/server-playwright
+npm install -g chrome-devtools-mcp
+npm install -g @playwright/mcp
+npm install -g @upstash/context7-mcp
 
-# Python基础服务
+# Python基础服务（serena代码助手需要）
 pip install uvx
 ```
 
@@ -35,7 +37,7 @@ pip install uvx
 cp 02-服务配置/claude-mcp-config.json ~/.config/claude/mcp_settings.json
 
 # ModelScope/Trae CN平台配置
-cp 02-服务配置/trae-mcp-config.json ~/.config/claude/mcp_settings.json
+cp 02-服务配置/Trae-mcp-config.json ~/.config/claude/mcp_settings.json
 ```
 
 ### 配置验证
