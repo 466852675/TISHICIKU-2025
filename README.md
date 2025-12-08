@@ -20,15 +20,15 @@
 
 ```
 智能体配置模板/
-├── 📄 README.md                      # 本说明文档（主要入口）
+├── 📄 README.md                      # 本说明文档
 ├── 📁 01-框架配置/                    # 框架系统提示词配置
 │   └── 📁 react-admin/               # React管理系统专用配置
-│       ├── 📄 v1-system-prompt.md   # 基础版系统提示词
-│       ├── 📄 v2-system-prompt.md   # 增强版系统提示词
-│       └── 📄 v3-system-prompt.md   # 专业版系统提示词
+│       ├── 📄 v1-system-prompt.md   # 基础版
+│       ├── 📄 v2-system-prompt.md   # 增强版
+│       └── 📄 v3-system-prompt.md   # 专业版
 ├── 📁 02-服务配置/                    # MCP服务配置文件
-│   ├── 📄 claude-mcp-config.json    # Claude/通用平台配置
-│   └── 📄 Trae-mcp-config.json       # ModelScope/Trae CN平台配置
+│   ├── 📄 claude-mcp-config.json    # Claude/通用平台
+│   └── 📄 Trae-mcp-config.json       # ModelScope/Trae CN平台
 ├── 📁 03-执行规则/                    # AI执行规则和约束
 │   ├── 📁 通用规则/                 # 通用执行规则
 │   │   └── 📄 个人规则.md           # 个人工作风格配置
@@ -37,9 +37,9 @@
 │       └── 📄 上下文规则.md         # 上下文理解规则
 ├── 📁 04-提示词专家/                  # 专业提示词专家库
 │   ├── 📁 01-需求分析/              # 需求分析专家
-│   │   ├── 📄 需求生成专家.md       # 需求A单生成专家
-│   │   ├── 📄 可研生成专家.md       # 电网数字化项目可行性研究报告专家
-│   │   └── 📄 PRD生成专家.md        # 产品需求文档专家
+│   │   ├── 📄 需求生成专家.md       # 需求A单生成
+│   │   ├── 📄 可研生成专家.md       # 电网数字化可研报告
+│   │   └── 📄 PRD生成专家.md        # 产品需求文档
 │   ├── 📁 02-原型设计/              # 原型设计专家
 │   │   ├── 📁 PC端/                 # PC端设计专家
 │   │   │   ├── 📄 看板风格专家.md   # 数据看板风格
@@ -49,15 +49,15 @@
 │   │   │   ├── 📄 国网风专家.md     # 国家电网风格
 │   │   │   ├── 📄 弥散风专家.md     # 现代弥散风格
 │   │   │   └── 📄 苹果风专家.md     # iOS设计规范
-│   │   └── 📄 UI规范专家.md         # UI设计逆向工程专家
+│   │   └── 📄 UI规范专家.md         # UI设计逆向工程
 │   ├── 📁 03-测试验证/              # 测试验证专家
 │   │   ├── 📄 功能测试专家.md       # 页面功能测试
 │   │   ├── 📄 自动化测试专家.md     # 自动化测试
 │   │   └── 📄 文档质量校验专家.md   # 文档质量检查
 │   └── 📁 04-通用专家/              # 通用功能专家
-│       ├── 📄 PPT生成专家.md        # PPT生成专家
+│       ├── 📄 PPT生成专家.md        # PPT生成
 │       ├── 📄 周报生成专家.md       # 工作周报生成
-│       ├── 📄 提示词生成专家.md     # 提示词优化专家
+│       ├── 📄 提示词生成专家.md     # AI提示词优化
 │       └── 📄 网页生成专家.md       # 快速网页代码生成
 ```
 
@@ -72,33 +72,26 @@
 
 ### 🚀 快速配置步骤
 
-#### 1️⃣ 选择平台配置
+1. **选择平台配置**
+   ```bash
+   # Claude/通用平台用户
+   cp 02-服务配置/claude-mcp-config.json ~/.config/claude/mcp_settings.json
+   
+   # ModelScope/Trae CN用户
+   cp 02-服务配置/Trae-mcp-config.json ~/.config/claude/mcp_settings.json
+   ```
 
-```bash
-# Claude/通用平台用户
-cp 02-服务配置/claude-mcp-config.json ~/.config/claude/mcp_settings.json
+2. **安装MCP服务依赖**
+   ```bash
+   # 安装核心MCP服务
+   npm install -g @modelcontextprotocol/server-sequential-thinking @modelcontextprotocol/server-memory mcp-deepwiki @modelcontextprotocol/server-playwright
+   ```
 
-# ModelScope/Trae CN用户
-cp 02-服务配置/Trae-mcp-config.json ~/.config/claude/mcp_settings.json
-```
+3. **重启AI平台**
+   启动Claude Desktop或对应AI平台，检查MCP服务是否正常加载。
 
-#### 2️⃣ 安装MCP服务依赖
-
-```bash
-# 安装核心MCP服务
-npm install -g @modelcontextprotocol/server-sequential-thinking
-npm install -g @modelcontextprotocol/server-memory
-npm install -g mcp-deepwiki
-npm install -g @modelcontextprotocol/server-playwright
-```
-
-#### 3️⃣ 重启AI平台
-
-启动Claude Desktop或对应AI平台，检查MCP服务是否正常加载。
-
-#### 4️⃣ 选择专家配置
-
-根据任务需求，从 `04-提示词专家/` 中选择对应的专家配置。
+4. **选择专家配置**
+   根据任务需求，从 `04-提示词专家/` 中选择对应的专家配置。
 
 **完成！** 🎉 您现在可以开始使用智能体配置模板了！
 
@@ -149,37 +142,37 @@ npm install -g @modelcontextprotocol/server-playwright
 ### 🧠 4. 提示词专家库
 
 #### 📊 需求分析专家
-- **需求生成专家**: 标准化需求A单生成
-- **可研生成专家**: 电网数字化项目可行性研究报告
-- **PRD生成专家**: 完整产品需求文档创建
+- **需求生成专家**: 标准化需求A单生成，优化后保留完整需求A单模板
+- **可研生成专家**: 电网数字化项目可行性研究报告，优化后保留完整可研报告模板
+- **PRD生成专家**: 完整产品需求文档创建，优化后保留完整PRD模板
 
 #### 🎨 原型设计专家
 
 **PC端设计**:
-- **看板风格专家**: 数据可视化看板设计
-- **系统风格专家**: 企业级管理系统界面
-- **简约风格专家**: 现代简洁设计风格
+- **看板风格专家**: 数据可视化看板设计，优化后简化了HTML模板和CSS
+- **系统风格专家**: 企业级管理系统界面，优化后精简了HTML模板示例
+- **简约风格专家**: 现代简洁设计风格，优化后保持核心设计元素
 
 **APP端设计**:
-- **国网风专家**: 国家电网标准风格
-- **弥散风专家**: 现代弥散渐变效果
-- **苹果风专家**: iOS Human Interface Guidelines风格
+- **国网风专家**: 国家电网标准风格，优化后简化了角色描述和HTML模板
+- **弥散风专家**: 现代弥散渐变效果，优化后精简了设计核心元素
+- **苹果风专家**: iOS Human Interface Guidelines风格，优化后优化了CSS样式
 
 **UI规范专家**:
 - UI设计逆向工程专家
 - 像素级界面解构
-- AI生图提示词生成
+- AI生图提示词生成，优化后优化了内容结构
 
 #### 🧪 测试验证专家
-- **功能测试专家**: 页面功能全面测试
-- **自动化测试专家**: 端到端自动化测试
-- **文档质量校验专家**: 文档规范性检查
+- **功能测试专家**: 页面功能全面测试，优化后重组了测试用例结构
+- **自动化测试专家**: 端到端自动化测试，优化后精简了测试流程
+- **文档质量校验专家**: 文档规范性检查，优化后优化了测试用例结构
 
 #### 🛠️ 通用专家
-- **PPT生成专家**: 自动化演示文稿生成
-- **周报生成专家**: 标准化工作周报
-- **提示词生成专家**: AI提示词优化
-- **网页生成专家**: 快速网页代码生成
+- **PPT生成专家**: 自动化演示文稿生成，优化后简化了模板示例
+- **周报生成专家**: 标准化工作周报，优化后保持核心功能
+- **提示词生成专家**: AI提示词优化，优化后统一了通用内容
+- **网页生成专家**: 快速网页代码生成，优化后优化了内容结构
 
 ---
 
@@ -209,13 +202,10 @@ npm install -g @modelcontextprotocol/server-playwright
 ### 场景2: 移动应用设计 📱
 
 ```bash
-# 选择APP设计专家
-04-提示词专家/02-原型设计/APP端/
-
-# 根据风格选择
-04-提示词专家/02-原型设计/APP端/国网风专家.md  # 国网风格
-04-提示词专家/02-原型设计/APP端/弥散风专家.md  # 现代弥散风格
-04-提示词专家/02-原型设计/APP端/苹果风专家.md  # iOS风格
+# 根据风格选择APP设计专家
+04-提示词专家/02-原型设计/APP端/国网风专家.md     # 国网风格
+04-提示词专家/02-原型设计/APP端/弥散风专家.md     # 现代弥散风格
+04-提示词专家/02-原型设计/APP端/苹果风专家.md     # iOS风格
 ```
 
 **使用示例**:
