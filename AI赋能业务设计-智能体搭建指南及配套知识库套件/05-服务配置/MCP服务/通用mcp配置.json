@@ -1,0 +1,49 @@
+{
+    "mcpServers": {
+        "Sequential Thinking": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-sequential-thinking"
+            ],
+            "env": {},
+            "fromGalleryId": "byted-mcp-volcengine.3rd_party_mcp_server_sequential_thinking"
+        },
+        "context7": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@upstash/context7-mcp@latest"
+            ],
+            "env": {},
+            "fromGalleryId": "byted-mcp-volcengine.3rd_party_mcp_server_context7"
+        },
+        "Chrome DevTools MCP": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "chrome-devtools-mcp@latest"
+            ],
+            "env": {},
+            "fromGalleryId": "byted-mcp.chrome-devtools-mcp"
+        },
+        "mcp-server-chart": {
+            "type": "sse",
+            "url": "https://mcp.api-inference.modelscope.net/fcc00574ee4a4d/sse"
+        },
+        "playwright": {
+            "args": [
+                "@playwright/mcp@latest"
+            ],
+            "command": "npx"
+        },
+        "MCP-ECharts": {
+            "type": "sse",
+            "url": "https://mcp.api-inference.modelscope.net/6e398f095c2247/sse"
+        },
+        "quickchart": {
+            "type": "sse",
+            "url": "https://mcp.api-inference.modelscope.net/c9e4463a2a164a/sse"
+        }
+    }
+}
