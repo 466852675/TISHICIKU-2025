@@ -1,156 +1,49 @@
-# 工具安装包模块 - AI 上下文文档
+# 00-工具安装包
 
-> **导航**: [根目录](../CLAUDE.md) > **工具安装包模块**
+## 模块定位
 
----
+本模块提供AI编程工具与基础环境的安装入口，涵盖国内外主流AI IDE、开发环境、数据库、云服务、版本控制等100+工具的官方下载链接。
 
-## 📋 模块概述
+## 关键文件
 
-**模块名称**: 工具安装包  
-**模块类型**: 资源库  
-**模块定位**: Trae CN、Node.js、Python等开发工具的安装包和安装指南
+- **安装与环境入口**：[安装网址.md](file:///c:/Users/hangy/Desktop/AI%E6%99%BA%E8%83%BD%E4%BD%93%E9%85%8D%E7%BD%AE%E6%A8%A1%E6%9D%BF%E5%A5%97%E4%BB%B6/00-%E5%B7%A5%E5%85%B7%E5%AE%89%E8%A3%85%E5%8C%85/%E5%AE%89%E8%A3%85%E7%BD%91%E5%9D%80.md)
+  - AI编程IDE（国内外20+产品）
+  - 基础运行环境（Node.js/Python/Java/.NET）
+  - 数据库工具（关系型/NoSQL/管理工具）
+  - 开发编辑器（VS Code/JetBrains全家桶等）
+  - 浏览器与API测试工具
+  - 包管理器与构建工具
+  - 容器与虚拟化（Docker/K8s）
+  - 云服务CLI（国内外主流云平台）
+  - 版本控制（Git及客户端工具）
+  - 文档与协作工具
+  - 国内镜像加速配置
 
-### 核心功能
-- 📦 提供Trae CN IDE安装包下载链接
-- 🔧 提供Node.js、Python安装指南
-- 📋 环境配置说明
-- ✅ 安装验证步骤
+## 覆盖范围
 
----
+### 国内AI编程工具
+Trae CN、CodeGeeX、文心快码、通义灵码、iFlyCode、腾讯云AI代码助手、GitCode AI
 
-## 📁 模块结构
+### 国外AI编程工具
+GitHub Copilot、Cursor、Windsurf、Tabnine、Amazon CodeWhisperer、JetBrains AI、Replit Ghostwriter、Sourcegraph Cody、Poolside、Lovable、v0.dev、Bolt.new
 
-### 目录树
-```
-00-工具安装包/
-├── 安装网址.md              # 工具安装网址集合
-└── CLAUDE.md                # 本模块文档
-```
+### 基础环境
+Node.js、Python、Java、.NET及其版本管理工具
 
-### 文件说明
+### 数据库
+MySQL、PostgreSQL、MongoDB、Redis、Elasticsearch、DBeaver等
 
-| 文件 | 说明 | 关键内容 |
-|------|------|----------|
-| 安装网址.md | 工具安装网址集合 | Trae CN、Python、Node.js安装链接 |
+### 云服务
+阿里云、腾讯云、华为云、AWS、Azure、Google Cloud等CLI工具
 
----
+## 使用建议
 
-## 🔗 模块依赖
+1. **新手用户**：查看"快速安装清单"章节，安装必需工具（Trae/Node.js/Git）
+2. **进阶用户**：根据项目需求选择对应类别的工具
+3. **国内用户**：优先使用国内镜像链接，下载速度更快
 
-### 内部依赖
-- **无**: 本模块为独立资源模块
+## 相关链接
 
-### 外部依赖
-- **网络连接**: 需要网络下载安装包
-- **操作系统**: Windows/macOS/Linux
-
----
-
-## 📖 关键文件说明
-
-### 1. 安装网址.md
-- **位置**: `00-工具安装包/安装网址.md`
-- **作用**: 提供所有必需工具的安装链接
-- **关键内容**:
-  - Trae CN安装网址：https://www.trae.cn/
-  - Python安装网址：https://pythonlang.cn/downloads/
-  - Node.js安装网址：https://nodejs.cn/download/
-
----
-
-## 🎯 使用场景
-
-### 场景1: 首次安装Trae IDE
-```
-1. 访问 安装网址.md 获取Trae CN安装链接
-2. 下载并安装Trae CN IDE
-3. 安装Node.js（如需要）
-4. 安装Python（如需要）
-5. 验证安装是否成功
-```
-
-### 场景2: 环境重装
-```
-1. 卸载旧版本工具
-2. 访问 安装网址.md 获取最新安装链接
-3. 重新安装所有工具
-4. 验证环境配置
-```
-
-### 场景3: 团队环境统一
-```
-1. 统一分发安装包链接
-2. 制定团队安装标准
-3. 验证所有成员环境一致
-```
-
----
-
-## 🔧 接口与依赖
-
-### 输入接口
-- **用户需求**: 需要安装的开发工具
-- **操作系统**: Windows/macOS/Linux
-
-### 输出接口
-- **安装包**: 工具安装包下载链接
-- **安装指南**: 工具安装步骤说明
-
----
-
-## 📊 模块统计
-
-### 文件统计
-- **安装指南**: 1个
-- **工具链接**: 3个（Trae CN、Python、Node.js）
-
-### 覆盖范围
-- ✅ **Trae CN**: IDE安装包
-- ✅ **Node.js**: JavaScript运行环境
-- ✅ **Python**: Python运行环境
-
----
-
-## 🚀 快速开始
-
-### 安装步骤
-1. **查看安装网址**: 打开 `安装网址.md` 查看所有工具安装链接
-2. **下载安装包**: 访问对应网址下载最新版本
-3. **安装工具**: 按照安装向导完成安装
-4. **验证安装**: 使用命令行验证安装是否成功
-   ```bash
-   # 验证Node.js
-   node --version
-   
-   # 验证Python
-   python --version
-   ```
-
----
-
-## 📝 注意事项
-
-### 使用限制
-- **网络要求**: 需要网络连接下载安装包
-- **系统要求**: 需要满足各工具的系统要求
-- **版本要求**: Node.js需要 >= 14
-
-### 最佳实践
-- **版本选择**: 选择LTS（长期支持）版本
-- **环境变量**: 确保环境变量配置正确
-- **权限设置**: 确保有足够的系统权限安装工具
-
----
-
-## 🔗 相关链接
-
-- [根目录文档](../CLAUDE.md)
-- [完整指南模块文档](../01-完整指南/CLAUDE.md)
-- [快速配置模块文档](../02-快速配置/CLAUDE.md)
-
----
-
-**文档版本**: v1.0.1  
-**最后更新**: 2025-12-26  
-**维护人**: yuhang
-
+- 项目架构文档：[CLAUDE.md](file:///c:/Users/hangy/Desktop/AI%E6%99%BA%E8%83%BD%E4%BD%93%E9%85%8D%E7%BD%AE%E6%A8%A1%E6%9D%BF%E5%A5%97%E4%BB%B6/CLAUDE.md)
+- 项目主README：[README.md](file:///c:/Users/hangy/Desktop/AI%E6%99%BA%E8%83%BD%E4%BD%93%E9%85%8D%E7%BD%AE%E6%A8%A1%E6%9D%BF%E5%A5%97%E4%BB%B6/README.md)
+- 快速配置指南：[02-快速配置/快速配置清单.md](file:///c:/Users/hangy/Desktop/AI%E6%99%BA%E8%83%BD%E4%BD%93%E9%85%8D%E7%BD%AE%E6%A8%A1%E6%9D%BF%E5%A5%97%E4%BB%B6/02-%E5%BF%AB%E9%80%9F%E9%85%8D%E7%BD%AE/%E5%BF%AB%E9%80%9F%E9%85%8D%E7%BD%AE%E6%B8%85%E5%8D%95.md)

@@ -1,41 +1,40 @@
-{
-    "mcpServers": {
-        "Sequential Thinking": {
-            "command": "npx",
-            "args": [
-                "-y",
-                "@modelcontextprotocol/server-sequential-thinking"
-            ],
-            "env": {},
-            "fromGalleryId": "byted-mcp-volcengine.3rd_party_mcp_server_sequential_thinking"
-        },
-        "context7": {
-            "command": "npx",
-            "args": [
-                "-y",
-                "@upstash/context7-mcp@latest"
-            ],
-            "env": {},
-            "fromGalleryId": "byted-mcp-volcengine.3rd_party_mcp_server_context7"
-        },
-        "Chrome DevTools MCP": {
-            "command": "npx",
-            "args": [
-                "-y",
-                "chrome-devtools-mcp@latest"
-            ],
-            "env": {},
-            "fromGalleryId": "byted-mcp.chrome-devtools-mcp"
-        },
-        "playwright": {
-            "args": [
-                "@playwright/mcp@latest"
-            ],
-            "command": "npx"
-        },
-        "drawio": {
-            "command": "npx",
-            "args": ["@next-ai-drawio/mcp-server@latest"]
+    {
+        "mcpServers": {
+            "Sequential Thinking": {
+                "command": "npx",
+                "args": [
+                    "-y",
+                    "@modelcontextprotocol/server-sequential-thinking"
+                ],
+                "env": {},
+                "fromGalleryId": "byted-mcp-volcengine.3rd_party_mcp_server_sequential_thinking"
+            },
+            "context7": {
+                "command": "npx",
+                "args": [
+                    "-y",
+                    "@upstash/context7-mcp@latest"
+                ],
+                "env": {},
+                "fromGalleryId": "byted-mcp-volcengine.3rd_party_mcp_server_context7"
+            },
+            "playwright": {
+                "args": [
+                    "@playwright/mcp@latest"
+                ],
+                "command": "npx"
+            },
+            "drawio": {
+                "command": "npx",
+                "args": ["@next-ai-drawio/mcp-server@latest"]
+            },
+            "pencil": {
+                "command": "c:\\Users\\hangy\\.trae-cn\\extensions\\highagency.pencildev-0.6.19-universal\\out\\mcp-server-windows-x64.exe",
+                "args": [
+                    "--ws-port",
+                    "49203"
+                ],
+                "env": {}
+            }
         }
     }
-}
