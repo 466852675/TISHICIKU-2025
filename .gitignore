@@ -4,3 +4,6 @@
 
 # Sisyphus local database
 .sisyphus
+
+# Spec workflow templates
+.spec-workflow
