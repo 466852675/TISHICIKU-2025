@@ -7,3 +7,6 @@
 
 # Spec workflow templates
 .spec-workflow
+
+# Trae IDE local files
+.trae

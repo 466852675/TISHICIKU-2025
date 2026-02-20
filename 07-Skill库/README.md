@@ -4,7 +4,7 @@
 
 ## 简介
 
-本 Skill 库包含 **50+ 个专业 Skill**，涵盖软件开发、上下文工程、多智能体架构、文件处理、前端设计等多个领域。每个 Skill 都是自包含的知识包，为 Claude 提供特定领域的专业指导、工作流程和工具集成。
+本 Skill 库包含 **52 个专业 Skill**，涵盖软件开发、上下文工程、多智能体架构、文件处理、前端设计等多个领域。每个 Skill 都是自包含的知识包，为 Claude 提供特定领域的专业指导、工作流程和工具集成。
 
 ## 快速开始
 
@@ -83,10 +83,11 @@ Claude 会在每次对话开始时自动读取本目录下的 `CLAUDE.md` 文件
 | **evaluation** | 智能体评估框架 |
 | **advanced-evaluation** | 高级评估技术（LLM-as-judge） |
 
-### 文件格式处理（4 个）
+### 文件格式处理（5 个）
 
 | Skill | 用途 |
 |-------|------|
+| **file-reader** | 通用文件读取器（Excel、Word、PPT、PDF 等） |
 | **docx** | Microsoft Word 文档处理 |
 | **xlsx** | Microsoft Excel 表格处理 |
 | **pptx** | Microsoft PowerPoint 演示文稿 |
@@ -112,10 +113,11 @@ Claude 会在每次对话开始时自动读取本目录下的 `CLAUDE.md` 文件
 | **writing-skills** | Skill 编写指南 |
 | **skill-creator** | Skill 创建完整指南 |
 
-### 平台集成（8 个）
+### 平台集成（9 个）
 
 | Skill | 用途 |
 |-------|------|
+| **specify-init** | Specify 项目初始化 |
 | **obsidian-markdown** | Obsidian 风格 Markdown |
 | **obsidian-bases** | Obsidian Bases 数据库 |
 | **json-canvas** | JSON Canvas 可视化 |

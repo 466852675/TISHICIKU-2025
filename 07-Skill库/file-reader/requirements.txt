@@ -1,0 +1,6 @@
+pandas>=2.0.0
+openpyxl>=3.1.0
+python-docx>=1.0.0
+python-pptx>=0.6.21
+pypdf>=4.0.0
+chardet>=5.0.0

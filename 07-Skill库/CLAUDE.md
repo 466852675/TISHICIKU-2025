@@ -1,6 +1,6 @@
 # Skill 库
 
-本目录包含 50+ 个专业 Skill，用于扩展 Claude 的能力。每个 Skill 都是一个自包含的知识包，提供特定领域的工作流程、最佳实践和工具集成。
+本目录包含 52 个专业 Skill，用于扩展 Claude 的能力。每个 Skill 都是一个自包含的知识包，提供特定领域的工作流程、最佳实践和工具集成。
 
 ## 什么是 Skill
 
@@ -67,6 +67,7 @@ Skill 是模块化的能力扩展包，将 Claude 从通用智能体转变为特
 ### 文件格式处理
 | Skill | 描述 | 触发条件 |
 |-------|------|----------|
+| [file-reader](file-reader/) | 通用文件读取器 | 读取、查看或提取 Excel、Word、PPT、PDF 等文件内容时 |
 | [docx](docx/) | Word 文档处理 | 创建、编辑、分析 .docx 文件时 |
 | [xlsx](xlsx/) | Excel 表格处理 | 创建、编辑、分析电子表格时 |
 | [pptx](pptx/) | PowerPoint 演示文稿 | 创建、编辑演示文稿时 |
@@ -92,6 +93,7 @@ Skill 是模块化的能力扩展包，将 Claude 从通用智能体转变为特
 ### 特定平台集成
 | Skill | 描述 | 触发条件 |
 |-------|------|----------|
+| [specify-init](specify-init-helper/) | Specify 项目初始化 | 提到"开发流程"、"交付流程"、"规范流程"等关键词时 |
 | [obsidian-markdown](obsidian-markdown/) | Obsidian Markdown | 创建、编辑 Obsidian 风格 Markdown 时 |
 | [obsidian-bases](obsidian-bases/) | Obsidian Bases | 创建、编辑 .base 数据库文件时 |
 | [json-canvas](json-canvas/) | JSON Canvas | 创建、编辑 .canvas 可视化文件时 |
