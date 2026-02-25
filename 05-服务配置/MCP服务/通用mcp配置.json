@@ -29,10 +29,10 @@
                 "args": ["@next-ai-drawio/mcp-server@latest"]
             },
             "pencil": {
-                "command": "c:\\Users\\hangy\\.trae-cn\\extensions\\highagency.pencildev-0.6.19-universal\\out\\mcp-server-windows-x64.exe",
+                "command": "C:\\Users\\hangy\\.trae-cn\\extensions\\highagency.pencildev-0.6.28-universal\\out\\mcp-server-windows-x64.exe",
                 "args": [
-                    "--ws-port",
-                    "49203"
+                    "--app",
+                    "trae"
                 ],
                 "env": {}
             }
