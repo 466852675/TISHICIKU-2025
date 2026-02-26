@@ -32,7 +32,7 @@
                 "command": "C:\\Users\\hangy\\.trae-cn\\extensions\\highagency.pencildev-0.6.28-universal\\out\\mcp-server-windows-x64.exe",
                 "args": [
                     "--app",
-                    "trae"
+                    "vscode"
                 ],
                 "env": {}
             }
