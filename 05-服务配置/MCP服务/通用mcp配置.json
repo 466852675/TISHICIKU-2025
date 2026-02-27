@@ -1,15 +1,6 @@
     {
         "mcpServers": {
-            "Sequential Thinking": {
-                "command": "npx",
-                "args": [
-                    "-y",
-                    "@modelcontextprotocol/server-sequential-thinking"
-                ],
-                "env": {},
-                "fromGalleryId": "byted-mcp-volcengine.3rd_party_mcp_server_sequential_thinking"
-            },
-            "context7": {
+          "context7": {
                 "command": "npx",
                 "args": [
                     "-y",
@@ -29,12 +20,13 @@
                 "args": ["@next-ai-drawio/mcp-server@latest"]
             },
             "pencil": {
-                "command": "C:\\Users\\hangy\\.trae-cn\\extensions\\highagency.pencildev-0.6.28-universal\\out\\mcp-server-windows-x64.exe",
                 "args": [
                     "--app",
-                    "vscode"
+                    "trae_cn"
                 ],
-                "env": {}
+                "command": "c:\\Users\\hangy\\.trae-cn\\extensions\\highagency.pencildev-0.6.28-universal\\out\\mcp-server-windows-x64.exe",
+                "env": {},
+                "type": "stdio"
             }
         }
     }
