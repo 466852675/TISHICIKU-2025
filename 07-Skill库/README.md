@@ -4,7 +4,7 @@
 
 ## 简介
 
-本 Skill 库包含 **52 个专业 Skill**，涵盖软件开发、上下文工程、多智能体架构、文件处理、前端设计等多个领域。每个 Skill 都是自包含的知识包，为 Claude 提供特定领域的专业指导、工作流程和工具集成。
+本 Skill 库包含 **64 个专业 Skill**，涵盖软件开发、上下文工程、多智能体架构、文件处理、前端设计、网络搜索、自动化工具等多个领域。每个 Skill 都是自包含的知识包，为 Claude 提供特定领域的专业指导、工作流程和工具集成。
 
 ## 快速开始
 
@@ -25,7 +25,7 @@ Claude 会在每次对话开始时自动读取本目录下的 `CLAUDE.md` 文件
 
 ## Skill 目录
 
-### 核心工作流程（5 个）
+### 核心工作流程（7 个）
 
 | Skill | 用途 |
 |-------|------|
@@ -34,6 +34,8 @@ Claude 会在每次对话开始时自动读取本目录下的 `CLAUDE.md` 文件
 | **writing-plans** | 编写详细的实施计划 |
 | **executing-plans** | 执行已编写的计划 |
 | **planning-with-files** | 使用文件进行复杂任务规划 |
+| **create-plan** | 创建简洁的任务计划 |
+| **find-skills** | 发现和安装智能体 skill |
 
 ### 开发方法论（7 个）
 
@@ -47,7 +49,7 @@ Claude 会在每次对话开始时自动读取本目录下的 `CLAUDE.md` 文件
 | **verification-before-completion** | 完成前的验证检查 |
 | **using-git-worktrees** | 使用 Git Worktrees 进行隔离开发 |
 
-### 上下文工程（6 个）
+### 上下文工程（7 个）
 
 | Skill | 用途 |
 |-------|------|
@@ -57,6 +59,7 @@ Claude 会在每次对话开始时自动读取本目录下的 `CLAUDE.md` 文件
 | **context-degradation** | 上下文退化诊断与修复 |
 | **filesystem-context** | 文件系统上下文管理 |
 | **memory-systems** | 智能体内存系统 |
+| **memory-setup** | 配置持久化内存搜索 |
 
 ### 多智能体架构（5 个）
 
@@ -113,11 +116,30 @@ Claude 会在每次对话开始时自动读取本目录下的 `CLAUDE.md` 文件
 | **writing-skills** | Skill 编写指南 |
 | **skill-creator** | Skill 创建完整指南 |
 
+### 网络搜索与信息获取（4 个）
+
+| Skill | 用途 |
+|-------|------|
+| **web-search** | 实时网页搜索（Playwright 驱动） |
+| **tavily** | Tavily AI 优化搜索 API |
+| **technology-news-search** | 实时科技新闻搜索聚合 |
+| **summarize** | 总结 URL、文件和 YouTube 内容 |
+
+### 自动化与工具（5 个）
+
+| Skill | 用途 |
+|-------|------|
+| **playwright** | Playwright 浏览器自动化 |
+| **imap-smtp-email** | IMAP/SMTP 邮件收发 |
+| **scheduled-task** | 定时任务创建与管理 |
+| **self-improving** | 自我改进与反思学习 |
+| **skill-vetter** | Skill 安全检查与审查 |
+
 ### 平台集成（9 个）
 
 | Skill | 用途 |
 |-------|------|
-| **specify-init** | Specify 项目初始化 |
+| **specify-init-helper** | Specify 项目初始化辅助 |
 | **obsidian-markdown** | Obsidian 风格 Markdown |
 | **obsidian-bases** | Obsidian Bases 数据库 |
 | **json-canvas** | JSON Canvas 可视化 |

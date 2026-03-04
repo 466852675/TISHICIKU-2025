@@ -1,6 +1,6 @@
 # AI智能体配置模板套件 v3.0
 
-> 🚀 **通用多IDE支持** | **27个专业提示词专家** | **52个Skill功能** | **100+工具资源**
+> 🚀 **通用多IDE支持** | **27个专业提示词专家** | **64个Skill功能** | **100+工具资源**
 
 **一套配置，全平台通用** - 支持 Trae、Cursor、Windsurf、GitHub Copilot、CodeGeeX、JetBrains AI 等16+主流AI编程工具
 
@@ -12,7 +12,7 @@
 |------|------|------|
 | 🛠️ **多IDE兼容** | 一套配置适配 Trae/Cursor/Windsurf/Copilot 等主流IDE | 7+ IDE |
 | 🧠 **专业提示词专家** | 覆盖需求分析、原型设计、测试验证、PPT设计等专业领域 | **27个** |
-| ⚡ **52个Skill功能** | 文档生成、UI设计、代码开发、测试调试、上下文管理等全覆盖 | **52个** |
+| ⚡ **64个Skill功能** | 文档生成、UI设计、代码开发、测试调试、上下文管理、网络搜索等全覆盖 | **64个** |
 | 📚 **完整学习路径** | 从零基础到精通的系统化教程和实战案例 | 8章+ |
 | 🔧 **开箱即用** | 标准化配置模板，复制粘贴即可使用 | 100% |
 | 🌐 **国内外工具** | 收录国内外主流AI编程工具下载链接 | 100+ |
@@ -98,7 +98,7 @@ AI智能体配置模板套件/
 │   │       └── 【象牙白】智联蓝图手绘工业草图风专家.md
 │   ├── README.md                      # 专家库导航
 │   └── CLAUDE.md                      # 模块说明文档
-├── 07-Skill库/                       # 52个Skill功能库
+├── 07-Skill库/                       # 64个Skill功能库
 │   ├── skills/                        # Skill功能目录
 │   │   ├── docx/                      # Word文档生成
 │   │   ├── pptx/                      # PPT文档生成
@@ -186,32 +186,33 @@ AI智能体配置模板套件/
 
 ---
 
-## ⚡ 52个Skill功能详解
+## ⚡ 64个Skill功能详解
 
 ### Skill分类总览
 
 | 分类 | Skill数量 | 核心功能 | 代表Skill |
 |------|----------|---------|----------|
-| **文档处理** | 5个 | Word/PPT/PDF/Excel生成处理 | file-reader, docx, pptx, pdf, xlsx |
-| **设计工具** | 7个 | UI/UX设计、视觉设计、算法艺术 | ui-ux-pro-max, canvas-design, frontend-design |
-| **开发工作流** | 8个 | 项目规划、代码开发、Git工作流 | planning-with-files, executing-plans, using-git-worktrees |
-| **代码质量** | 6个 | TDD、调试、代码审查、测试 | test-driven-development, systematic-debugging, webapp-testing |
-| **上下文工程** | 5个 | 上下文管理、优化、压缩 | context-fundamentals, context-optimization, context-compression |
-| **代理系统** | 5个 | 多代理模式、记忆系统、BDI模型 | multi-agent-patterns, memory-systems, bdi-mental-states |
-| **评估与优化** | 3个 | 性能评估、LLM评判、验证 | evaluation, advanced-evaluation, verification-before-completion |
-| **工具与集成** | 5个 | MCP构建、NotebookLM、Web工件 | specify-init, mcp-builder, notebooklm, web-artifacts-builder |
-| **内容创作** | 3个 | 文档共创、内部沟通、头脑风暴 | doc-coauthoring, internal-comms, brainstorming |
-| **Skill开发** | 3个 | Skill创建、编写、自动触发 | skill-creator, writing-skills, auto-trigger-rules |
-| **超级能力** | 1个 | Skill系统入口 | using-superpowers |
+| **核心工作流程** | 7个 | Skill系统、计划编写、执行 | using-superpowers, brainstorming, writing-plans, create-plan |
+| **开发方法论** | 7个 | TDD、调试、代码审查、Git工作流 | test-driven-development, systematic-debugging, using-git-worktrees |
+| **上下文工程** | 7个 | 上下文管理、优化、内存系统 | context-fundamentals, context-optimization, memory-systems, memory-setup |
+| **多智能体架构** | 5个 | 多代理模式、BDI模型 | multi-agent-patterns, dispatching-parallel-agents, bdi-mental-states |
+| **工具设计与集成** | 3个 | MCP构建、工具设计、项目开发 | tool-design, mcp-builder, project-development |
+| **评估与质量** | 2个 | 性能评估、LLM评判 | evaluation, advanced-evaluation |
+| **文件格式处理** | 5个 | Word/PPT/PDF/Excel生成处理 | file-reader, docx, pptx, pdf, xlsx |
+| **前端与设计** | 6个 | UI/UX设计、视觉设计、算法艺术 | ui-ux-pro-max, canvas-design, frontend-design, algorithmic-art |
+| **内容创作** | 4个 | 文档共创、内部沟通、Skill编写 | doc-coauthoring, internal-comms, skill-creator |
+| **网络搜索** | 4个 | 实时搜索、新闻聚合、内容总结 | web-search, tavily, technology-news-search, summarize |
+| **自动化工具** | 5个 | 浏览器自动化、邮件、定时任务 | playwright, imap-smtp-email, scheduled-task, self-improving |
+| **平台集成** | 9个 | NotebookLM、Obsidian、Web工件 | notebooklm, obsidian-markdown, webapp-testing, remotion |
 
 ### Skill支持情况
 
 | IDE | 支持数量 | 支持方式 | 说明 |
 |-----|---------|---------|------|
-| **Trae** | 52/52 | MCP原生 + 脚本 | ⭐ 完整支持所有Skill |
-| **Cursor** | ~40/52 | 脚本 + 部分MCP | ⚠️ 部分Skill需手动配置 |
-| **Windsurf** | ~30/52 | 脚本 | ⚠️ 基础Skill支持 |
-| **Copilot** | ~25/52 | 脚本 | ⚠️ 有限支持 |
+| **Trae** | 64/64 | MCP原生 + 脚本 | ⭐ 完整支持所有Skill |
+| **Cursor** | ~50/64 | 脚本 + 部分MCP | ⚠️ 部分Skill需手动配置 |
+| **Windsurf** | ~40/64 | 脚本 | ⚠️ 基础Skill支持 |
+| **Copilot** | ~35/64 | 脚本 | ⚠️ 有限支持 |
 
 ---
 
@@ -219,7 +220,7 @@ AI智能体配置模板套件/
 
 ### Trae IDE（推荐 ⭐⭐⭐⭐⭐）
 
-**优势**：中文友好、功能完整、52个Skill全支持
+**优势**：中文友好、功能完整、64个Skill全支持
 
 **配置方式**：
 1. **个人规则**：`Settings` → `Rules` → 添加 [04-规则配置/通用配置/个人规则.md](04-规则配置/通用配置/个人规则.md)
@@ -261,10 +262,10 @@ AI智能体配置模板套件/
 
 | 规格项 | 详情 |
 |--------|------|
-| **项目版本** | v3.0.0 |
+| **项目版本** | v3.1.0 |
 | **支持IDE** | Trae、Cursor、Windsurf、GitHub Copilot、Codeium、Amazon CodeWhisperer、JetBrains AI Assistant |
 | **专家数量** | 27个（需求3 + 设计7 + 测试3 + 通用4 + 图表1 + PPT9） |
-| **Skill数量** | 52个（11大类别全覆盖） |
+| **Skill数量** | 64个（13大类别全覆盖） |
 | **工具链接** | 100+（国内外主流AI编程工具） |
 | **实战案例** | 10个完整项目（3基础+4进阶+3高级） |
 | **文档语言** | 中文为主 |
@@ -388,6 +389,21 @@ AI智能体配置模板套件/
 
 ## 🔄 版本更新日志
 
+### v3.1.0 (2026-03-03)
+
+**重大更新**：
+- ✅ **Skill库再次扩容**: 从52个Skill扩展到64个Skill
+- ✅ **新增网络搜索类**: web-search、tavily、technology-news-search、summarize
+- ✅ **新增自动化工具**: playwright、imap-smtp-email、scheduled-task、self-improving
+- ✅ **新增Skill管理**: find-skills、skill-vetter、create-plan、memory-setup
+- ✅ **Skill分类优化**: 从11大类优化为13大类，结构更清晰
+
+**新增Skill列表**：
+- **网络搜索**（4个）: web-search, tavily, technology-news-search, summarize
+- **自动化工具**（5个）: playwright, imap-smtp-email, scheduled-task, self-improving, skill-vetter
+- **工作流增强**（3个）: create-plan, find-skills, memory-setup
+- **平台集成**（1个）: specify-init-helper
+
 ### v3.0.0 (2026-02-01)
 
 **重大更新**：
@@ -398,17 +414,18 @@ AI智能体配置模板套件/
 - ✅ **架构文档更新**: 根目录README.md和CLAUDE.md全面更新
 
 **新增Skill类别**：
+- 核心工作流程类（7个）
+- 开发方法论类（7个）
+- 上下文工程类（7个）
+- 多智能体架构类（5个）
+- 工具设计与集成类（3个）
+- 评估与质量类（2个）
 - 文件格式处理类（5个）
-- 设计工具类（7个）
-- 开发工作流类（8个）
-- 代码质量类（6个）
-- 上下文工程类（5个）
-- 代理系统类（5个）
-- 评估与优化类（3个）
-- 工具与集成类（5个）
-- 内容创作类（3个）
-- Skill开发类（3个）
-- 超级能力类（1个）
+- 前端与设计类（6个）
+- 内容创作类（4个）
+- 网络搜索类（4个）
+- 自动化工具类（5个）
+- 平台集成类（9个）
 
 ### v2.0.0 (2025-12)
 
