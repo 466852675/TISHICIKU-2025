@@ -4,7 +4,7 @@
 
 ## 简介
 
-本 Skill 库包含 **64 个专业 Skill**，涵盖软件开发、上下文工程、多智能体架构、文件处理、前端设计、网络搜索、自动化工具等多个领域。每个 Skill 都是自包含的知识包，为 Claude 提供特定领域的专业指导、工作流程和工具集成。
+本 Skill 库包含 **66 个专业 Skill**，涵盖软件开发、上下文工程、多智能体架构、文件处理、前端设计、网络搜索、自动化工具、钉钉集成等多个领域。每个 Skill 都是自包含的知识包，为 Claude 提供特定领域的专业指导、工作流程和工具集成。
 
 ## 快速开始
 
@@ -135,7 +135,7 @@ Claude 会在每次对话开始时自动读取本目录下的 `CLAUDE.md` 文件
 | **self-improving** | 自我改进与反思学习 |
 | **skill-vetter** | Skill 安全检查与审查 |
 
-### 平台集成（9 个）
+### 平台集成（11 个）
 
 | Skill | 用途 |
 |-------|------|
@@ -148,6 +148,8 @@ Claude 会在每次对话开始时自动读取本目录下的 `CLAUDE.md` 文件
 | **remotion** | Remotion 视频制作 |
 | **brand-guidelines** | Anthropic 品牌指南 |
 | **webapp-testing** | Web 应用测试 |
+| **dingtalk-docs** | 钉钉文档操作 |
+| **dingtalk-ai-table** | 钉钉 AI 表格操作 |
 
 ## Skill 结构
 

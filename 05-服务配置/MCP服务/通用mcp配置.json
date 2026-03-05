@@ -24,9 +24,15 @@
                     "--app",
                     "trae_cn"
                 ],
-                "command": "c:\\Users\\hangy\\.trae-cn\\extensions\\highagency.pencildev-0.6.28-universal\\out\\mcp-server-windows-x64.exe",
+                "command": "c:\\Users\\hangy\\.trae-cn\\extensions\\highagency.pencildev-0.6.29-universal\\out\\mcp-server-windows-x64.exe",
                 "env": {},
                 "type": "stdio"
+            },
+            "钉钉文档": {
+              "url": "https://mcp-gw.dingtalk.com/server/712c4d556008d9b0684be13770b1d5835bbbaf596bc0e1d396f91d1ef034e2c5?key=89cf084c42cb514dafcf0902fae4bb1e"
+            },
+            "钉钉AI表格": {
+              "url": "https://mcp-gw.dingtalk.com/server/376040572f2be2b8d6dd7c3ff595ca66e5c5736b862463e67332c0c2d09b14da?key=abe91db97e1950d8ad69dd8c2328a678"
             }
         }
     }
