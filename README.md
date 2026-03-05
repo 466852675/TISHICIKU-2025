@@ -1,6 +1,6 @@
 # AI智能体配置模板套件 v3.2
 
-> 🚀 **通用多IDE支持** | **27个专业提示词专家** | **66个Skill功能** | **100+工具资源**
+> 🚀 **通用多IDE支持** | **27个专业提示词专家** | **67个Skill功能** | **100+工具资源**
 
 **一套配置，全平台通用** - 支持 Trae、Cursor、Windsurf、GitHub Copilot、CodeGeeX、JetBrains AI 等16+主流AI编程工具
 
@@ -12,7 +12,7 @@
 |------|------|------|
 | 🛠️ **多IDE兼容** | 一套配置适配 Trae/Cursor/Windsurf/Copilot 等主流IDE | 7+ IDE |
 | 🧠 **专业提示词专家** | 覆盖需求分析、原型设计、测试验证、PPT设计等专业领域 | **27个** |
-| ⚡ **66个Skill功能** | 文档生成、UI设计、代码开发、测试调试、上下文管理、网络搜索等全覆盖 | **66个** |
+| ⚡ **67个Skill功能** | 文档生成、UI设计、代码开发、测试调试、上下文管理、网络搜索等全覆盖 | **67个** |
 | 📚 **完整学习路径** | 从零基础到精通的系统化教程和实战案例 | 8章+ |
 | 🔧 **开箱即用** | 标准化配置模板，复制粘贴即可使用 | 100% |
 | 🌐 **国内外工具** | 收录国内外主流AI编程工具下载链接 | 100+ |
@@ -98,7 +98,7 @@ AI智能体配置模板套件/
 │   │       └── 【象牙白】智联蓝图手绘工业草图风专家.md
 │   ├── README.md                      # 专家库导航
 │   └── CLAUDE.md                      # 模块说明文档
-├── 07-Skill库/                       # 66个Skill功能库
+├── 07-Skill库/                       # 67个Skill功能库
 │   ├── skills/                        # Skill功能目录
 │   │   ├── docx/                      # Word文档生成
 │   │   ├── pptx/                      # PPT文档生成
@@ -148,7 +148,7 @@ AI智能体配置模板套件/
 1. **选择IDE**：参考 [00-工具安装包](00-工具安装包/) 下载安装
 2. **快速配置**：按照 [02-快速配置](02-快速配置/) 完成基础设置
 3. **使用专家**：从 [06-提示词库](06-提示词库/) 选择专家开始使用
-4. **调用Skill**：使用 [07-Skill库](07-Skill库/) 的66个Skill功能
+4. **调用Skill**：使用 [07-Skill库](07-Skill库/) 的67个Skill功能
 5. **实战练习**：完成 [08-实战案例](08-实战案例/) 中的10个案例
 
 ### 方式二：系统学习路径
@@ -186,7 +186,7 @@ AI智能体配置模板套件/
 
 ---
 
-## ⚡ 66个Skill功能详解
+## ⚡ 67个Skill功能详解
 
 ### Skill分类总览
 
@@ -202,17 +202,17 @@ AI智能体配置模板套件/
 | **前端与设计** | 6个 | UI/UX设计、视觉设计、算法艺术 | ui-ux-pro-max, canvas-design, frontend-design, algorithmic-art |
 | **内容创作** | 4个 | 文档共创、内部沟通、Skill编写 | doc-coauthoring, internal-comms, skill-creator |
 | **网络搜索** | 4个 | 实时搜索、新闻聚合、内容总结 | web-search, tavily, technology-news-search, summarize |
-| **自动化工具** | 5个 | 浏览器自动化、邮件、定时任务 | playwright, imap-smtp-email, scheduled-task, self-improving |
+| **自动化工具** | 6个 | 浏览器自动化、邮件、定时任务 | playwright, agent-browser, imap-smtp-email, scheduled-task, self-improving |
 | **平台集成** | 11个 | NotebookLM、Obsidian、Web工件、钉钉 | notebooklm, obsidian-markdown, webapp-testing, dingtalk-docs |
 
 ### Skill支持情况
 
 | IDE | 支持数量 | 支持方式 | 说明 |
 |-----|---------|---------|------|
-| **Trae** | 66/66 | MCP原生 + 脚本 | ⭐ 完整支持所有Skill |
-| **Cursor** | ~52/66 | 脚本 + 部分MCP | ⚠️ 部分Skill需手动配置 |
-| **Windsurf** | ~42/66 | 脚本 | ⚠️ 基础Skill支持 |
-| **Copilot** | ~36/66 | 脚本 | ⚠️ 有限支持 |
+| **Trae** | 67/67 | MCP原生 + 脚本 | ⭐ 完整支持所有Skill |
+| **Cursor** | ~53/67 | 脚本 + 部分MCP | ⚠️ 部分Skill需手动配置 |
+| **Windsurf** | ~43/67 | 脚本 | ⚠️ 基础Skill支持 |
+| **Copilot** | ~37/67 | 脚本 | ⚠️ 有限支持 |
 
 ---
 
@@ -220,7 +220,7 @@ AI智能体配置模板套件/
 
 ### Trae IDE（推荐 ⭐⭐⭐⭐⭐）
 
-**优势**：中文友好、功能完整、66个Skill全支持
+**优势**：中文友好、功能完整、67个Skill全支持
 
 **配置方式**：
 1. **个人规则**：`Settings` → `Rules` → 添加 [04-规则配置/通用配置/个人规则.md](04-规则配置/通用配置/个人规则.md)
@@ -265,7 +265,7 @@ AI智能体配置模板套件/
 | **项目版本** | v3.2.0 |
 | **支持IDE** | Trae、Cursor、Windsurf、GitHub Copilot、Codeium、Amazon CodeWhisperer、JetBrains AI Assistant |
 | **专家数量** | 27个（需求3 + 设计7 + 测试3 + 通用4 + 图表1 + PPT9） |
-| **Skill数量** | 66个（12大类别全覆盖） |
+| **Skill数量** | 67个（12大类别全覆盖） |
 | **工具链接** | 100+（国内外主流AI编程工具） |
 | **实战案例** | 10个完整项目（3基础+4进阶+3高级） |
 | **文档语言** | 中文为主 |
@@ -344,7 +344,7 @@ AI智能体配置模板套件/
 ### Q1: 本套件支持哪些IDE？
 
 **A**: 主要支持 Trae、Cursor、Windsurf、GitHub Copilot。其中：
-- **Trae**: 完整支持所有功能（66个Skill全支持）⭐推荐
+- **Trae**: 完整支持所有功能（67个Skill全支持）⭐推荐
 - **Cursor**: 支持大部分功能（~40个Skill）
 - **Windsurf**: 支持基础功能（~30个Skill）
 - **Copilot**: 支持核心功能（~25个Skill）
@@ -367,7 +367,7 @@ AI智能体配置模板套件/
 
 **A**: 
 - **专家（27个）**: 定义AI的角色和行为模式，通过提示词实现
-- **Skill（66个）**: 提供具体功能能力，通过MCP或脚本实现
+- **Skill（67个）**: 提供具体功能能力，通过MCP或脚本实现
 - **关系**: 专家可以调用Skill来完成任务
 
 ### Q4: 如何更新到最新版本？
@@ -392,12 +392,15 @@ AI智能体配置模板套件/
 ### v3.2.0 (2026-03-05)
 
 **重大更新**：
-- ✅ **Skill库持续扩容**: 从64个Skill扩展到66个Skill
+- ✅ **Skill库持续扩容**: 从64个Skill扩展到67个Skill
 - ✅ **新增钉钉集成**: dingtalk-docs、dingtalk-ai-table
+- ✅ **新增浏览器自动化**: agent-browser
 - ✅ **平台集成类扩展**: 从9个增加到11个
+- ✅ **自动化工具类扩展**: 从5个增加到6个
 
 **新增Skill列表**：
 - **钉钉集成**（2个）: dingtalk-docs（钉钉文档操作）, dingtalk-ai-table（钉钉AI表格操作）
+- **浏览器自动化**（1个）: agent-browser（浏览器自动化CLI）
 
 ### v3.1.0 (2026-03-03)
 
