@@ -1,0 +1,31 @@
+{
+  "schema": "openclaw.skill.v1",
+  "name": "multimodal",
+  "version": "1.0.0",
+  "description": "多模态模型图像/视频识别 - 优先 ModelScope，支持保底 QWen",
+  "entry": "multimodal.py",
+  "runtime": "python",
+  "env": {
+    "MODELSCOPE_API_KEY": "{{env.MODELSCOPE_API_KEY}}",
+    "MODELSCOPE_BASE_URL": "{{env.MODELSCOPE_BASE_URL}}",
+    "QWEN_API_KEY": "{{env.OPENAI_KEY}}"
+  },
+  "args": {
+    "image": "{{file}}",
+    "prompt": "{{prompt|default:'描述这张图片的内容'}}"
+  },
+  "triggers": [
+    {
+      "type": "command",
+      "pattern": "/multimodal"
+    },
+    {
+      "type": "keyword",
+      "pattern": "识别图片|分析图片|看图"
+    }
+  ],
+  "capabilities": {
+    "image_analysis": true,
+    "video_analysis": false
+  }
+}
