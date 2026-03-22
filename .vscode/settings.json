@@ -1,0 +1,6 @@
+{
+    "claudeCode.useTerminal": true,
+    "claudeCode.initialPermissionMode": "plan",
+    "claudeCode.preferredLocation": "sidebar",
+    "claudeCode.disableLoginPrompt": true
+}

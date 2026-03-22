@@ -1,6 +1,6 @@
 ---
 name: context-fundamentals
-description: This skill should be used when the user asks to "understand context", "explain context windows", "design agent architecture", "debug context issues", "optimize context usage", or discusses context components, attention mechanics, progressive disclosure, or context budgeting. Provides foundational understanding of context engineering for AI agent systems.
+description: This skill should be used when the user asks to "understand context", "explain context windows", "design agent architecture", "debug context issues", "optimize context usage", or discusses context components, attention mechanics, progressive disclosure, or context budgeting....
 ---
 
 # Context Engineering Fundamentals
@@ -164,7 +164,7 @@ This skill provides foundational context that all other skills build upon. It sh
 ## References
 
 Internal reference:
-- [Context Components Reference](./references/context-components.md) - Detailed technical reference
+- Context Components Reference - Detailed technical reference
 
 Related skills in this collection:
 - context-degradation - Understanding context failure patterns

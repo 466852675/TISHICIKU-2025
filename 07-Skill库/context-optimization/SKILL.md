@@ -1,6 +1,6 @@
 ---
 name: context-optimization
-description: This skill should be used when the user asks to "optimize context", "reduce token costs", "improve context efficiency", "implement KV-cache optimization", "partition context", or mentions context limits, observation masking, context budgeting, or extending effective context capacity.
+description: This skill should be used when the user asks to "optimize context", "reduce token costs", "improve context efficiency", "implement KV-cache optimization", "partition context", or mentions context limits, observation masking, context budgeting, or extending effective context...
 ---
 
 # Context Optimization Techniques
@@ -157,7 +157,7 @@ This skill builds on context-fundamentals and context-degradation. It connects t
 ## References
 
 Internal reference:
-- [Optimization Techniques Reference](./references/optimization_techniques.md) - Detailed technical reference
+- Optimization Techniques Reference - Detailed technical reference
 
 Related skills in this collection:
 - context-fundamentals - Context basics

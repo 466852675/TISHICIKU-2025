@@ -1,6 +1,6 @@
-# AI智能体配置模板套件 v3.2
+# AI智能体配置模板套件 v3.3
 
-> 🚀 **通用多IDE支持** | **27个专业提示词专家** | **67个Skill功能** | **100+工具资源**
+> 🚀 **通用多IDE支持** | **27个专业提示词专家** | **55个Skill功能** | **100+工具资源**
 
 **一套配置，全平台通用** - 支持 Trae、Cursor、Windsurf、GitHub Copilot、CodeGeeX、JetBrains AI 等16+主流AI编程工具
 
@@ -12,7 +12,7 @@
 |------|------|------|
 | 🛠️ **多IDE兼容** | 一套配置适配 Trae/Cursor/Windsurf/Copilot 等主流IDE | 7+ IDE |
 | 🧠 **专业提示词专家** | 覆盖需求分析、原型设计、测试验证、PPT设计等专业领域 | **27个** |
-| ⚡ **67个Skill功能** | 文档生成、UI设计、代码开发、测试调试、上下文管理、网络搜索等全覆盖 | **67个** |
+| ⚡ **55个Skill功能** | 文档生成、UI设计、代码开发、测试调试、上下文管理、网络搜索等全覆盖 | **55个** |
 | 📚 **完整学习路径** | 从零基础到精通的系统化教程和实战案例 | 8章+ |
 | 🔧 **开箱即用** | 标准化配置模板，复制粘贴即可使用 | 100% |
 | 🌐 **国内外工具** | 收录国内外主流AI编程工具下载链接 | 100+ |
@@ -98,7 +98,7 @@ AI智能体配置模板套件/
 │   │       └── 【象牙白】智联蓝图手绘工业草图风专家.md
 │   ├── README.md                      # 专家库导航
 │   └── CLAUDE.md                      # 模块说明文档
-├── 07-Skill库/                       # 67个Skill功能库
+├── 07-Skill库/                       # 55个Skill功能库
 │   ├── skills/                        # Skill功能目录
 │   │   ├── docx/                      # Word文档生成
 │   │   ├── pptx/                      # PPT文档生成
@@ -106,7 +106,6 @@ AI智能体配置模板套件/
 │   │   ├── xlsx/                      # Excel处理
 │   │   ├── ui-ux-pro-max/             # UI/UX设计
 │   │   ├── frontend-design/           # 前端设计
-│   │   ├── canvas-design/             # 视觉设计
 │   │   ├── planning-with-files/       # 文件规划
 │   │   ├── test-driven-development/   # 测试驱动开发
 │   │   ├── systematic-debugging/      # 系统调试
@@ -114,7 +113,6 @@ AI智能体配置模板套件/
 │   │   ├── context-optimization/      # 上下文优化
 │   │   ├── multi-agent-patterns/      # 多代理模式
 │   │   ├── mcp-builder/               # MCP构建
-│   │   ├── notebooklm/                # NotebookLM集成
 │   │   └── ...                        # 其他Skill
 │   ├── README.md                      # Skill库导航
 │   └── CLAUDE.md                      # 模块说明文档
@@ -148,7 +146,7 @@ AI智能体配置模板套件/
 1. **选择IDE**：参考 [00-工具安装包](00-工具安装包/) 下载安装
 2. **快速配置**：按照 [02-快速配置](02-快速配置/) 完成基础设置
 3. **使用专家**：从 [06-提示词库](06-提示词库/) 选择专家开始使用
-4. **调用Skill**：使用 [07-Skill库](07-Skill库/) 的68个Skill功能
+4. **调用Skill**：使用 [07-Skill库](07-Skill库/) 的55个Skill功能
 5. **实战练习**：完成 [08-实战案例](08-实战案例/) 中的10个案例
 
 ### 方式二：系统学习路径
@@ -186,7 +184,7 @@ AI智能体配置模板套件/
 
 ---
 
-## ⚡ 67个Skill功能详解
+## ⚡ 55个Skill功能详解
 
 ### Skill分类总览
 
@@ -194,26 +192,26 @@ AI智能体配置模板套件/
 |------|----------|---------|----------|
 | **核心工作流程** | 7个 | Skill系统、计划编写、执行 | using-superpowers, brainstorming, writing-plans, create-plan |
 | **开发方法论** | 7个 | TDD、调试、代码审查、Git工作流 | test-driven-development, systematic-debugging, using-git-worktrees |
-| **上下文工程** | 7个 | 上下文管理、优化、内存系统 | context-fundamentals, context-optimization, memory-systems, memory-setup |
+| **上下文工程** | 6个 | 上下文管理、优化、内存系统 | context-fundamentals, context-optimization, memory-systems |
 | **多智能体架构** | 5个 | 多代理模式、BDI模型 | multi-agent-patterns, dispatching-parallel-agents, bdi-mental-states |
 | **工具设计与集成** | 3个 | MCP构建、工具设计、项目开发 | tool-design, mcp-builder, project-development |
-| **评估与质量** | 2个 | 性能评估、LLM评判 | evaluation, advanced-evaluation |
-| **文件格式处理** | 5个 | Word/PPT/PDF/Excel生成处理 | file-reader, docx, pptx, pdf, xlsx |
-| **前端与设计** | 6个 | UI/UX设计、视觉设计、算法艺术 | ui-ux-pro-max, canvas-design, frontend-design, algorithmic-art |
-| **内容创作** | 4个 | 文档共创、内部沟通、Skill编写 | doc-coauthoring, internal-comms, skill-creator |
-| **网络搜索** | 4个 | 实时搜索、新闻聚合、内容总结 | web-search, tavily, technology-news-search, summarize |
-| **自动化工具** | 6个 | 浏览器自动化、邮件、定时任务 | playwright, agent-browser, imap-smtp-email, scheduled-task, self-improving |
-| **多模态处理** | 1个 | 图像识别、多模态AI | multimodal |
-| **平台集成** | 11个 | NotebookLM、Obsidian、Web工件、钉钉 | notebooklm, obsidian-markdown, webapp-testing, dingtalk-docs |
+| **评估与质量** | 1个 | 性能评估、LLM评判 | advanced-evaluation |
+| **文件格式处理** | 4个 | Word/PPT/PDF/Excel生成处理 | file-reader, pptx, pdf, xlsx |
+| **前端与设计** | 6个 | UI/UX设计、交互设计、算法艺术 | ui-ux-pro-max, frontend-design, interaction-design |
+| **内容创作** | 3个 | 文档共创、Skill编写 | doc-coauthoring, writing-skills, skill-creator |
+| **网络搜索** | 3个 | 实时搜索、内容总结 | web-search, tavily, summarize |
+| **自动化与工具** | 3个 | 浏览器自动化、邮件 | agent-browser, imap-smtp-email, skill-vetter |
+| **产品管理与营销** | 4个 | A/B测试、数据分析、用户引导 | ab-test-setup, analytics-tracking, onboarding-cro |
+| **工具与集成开发** | 4个 | 请求分析、GitHub集成、网页爬虫 | request-analyzer, github-skill-forge, scrapling-skills |
 
 ### Skill支持情况
 
 | IDE | 支持数量 | 支持方式 | 说明 |
 |-----|---------|---------|------|
-| **Trae** | 68/68 | MCP原生 + 脚本 | ⭐ 完整支持所有Skill |
-| **Cursor** | ~54/68 | 脚本 + 部分MCP | ⚠️ 部分Skill需手动配置 |
-| **Windsurf** | ~44/68 | 脚本 | ⚠️ 基础Skill支持 |
-| **Copilot** | ~38/68 | 脚本 | ⚠️ 有限支持 |
+| **Trae** | 55/55 | MCP原生 + 脚本 | ⭐ 完整支持所有Skill |
+| **Cursor** | ~45/55 | 脚本 + 部分MCP | ⚠️ 部分Skill需手动配置 |
+| **Windsurf** | ~40/55 | 脚本 | ⚠️ 基础Skill支持 |
+| **Copilot** | ~35/55 | 脚本 | ⚠️ 有限支持 |
 
 ---
 
@@ -221,7 +219,7 @@ AI智能体配置模板套件/
 
 ### Trae IDE（推荐 ⭐⭐⭐⭐⭐）
 
-**优势**：中文友好、功能完整、67个Skill全支持
+**优势**：中文友好、功能完整、55个Skill全支持
 
 **配置方式**：
 1. **个人规则**：`Settings` → `Rules` → 添加 [04-规则配置/通用配置/个人规则.md](04-规则配置/通用配置/个人规则.md)
@@ -263,10 +261,10 @@ AI智能体配置模板套件/
 
 | 规格项 | 详情 |
 |--------|------|
-| **项目版本** | v3.3.0 |
+| **项目版本** | v3.3.3 |
 | **支持IDE** | Trae、Cursor、Windsurf、GitHub Copilot、Codeium、Amazon CodeWhisperer、JetBrains AI Assistant |
 | **专家数量** | 27个（需求3 + 设计7 + 测试3 + 通用4 + 图表1 + PPT9） |
-| **Skill数量** | 68个（13大类别全覆盖） |
+| **Skill数量** | 55个（13大类别全覆盖） |
 | **工具链接** | 100+（国内外主流AI编程工具） |
 | **实战案例** | 10个完整项目（3基础+4进阶+3高级） |
 | **文档语言** | 中文为主 |
@@ -345,22 +343,25 @@ AI智能体配置模板套件/
 ### Q1: 本套件支持哪些IDE？
 
 **A**: 主要支持 Trae、Cursor、Windsurf、GitHub Copilot。其中：
-- **Trae**: 完整支持所有功能（68个Skill全支持）⭐推荐
-- **Cursor**: 支持大部分功能（~40个Skill）
-- **Windsurf**: 支持基础功能（~30个Skill）
-- **Copilot**: 支持核心功能（~25个Skill）
+- **Trae**: 完整支持所有功能（55个Skill全支持）⭐推荐
+- **Cursor**: 支持大部分功能（~45个Skill）
+- **Windsurf**: 支持基础功能（~40个Skill）
+- **Copilot**: 支持核心功能（~35个Skill）
 
 ### Q2: 如何选择合适的专家？
 
 **A**: 参考以下决策树：
 ```
 任务类型？
-├── 需求分析 → 需求生成专家 / 可研生成专家 / PRD生成专家
+├── 需求分析 → 需求生成专家 / 可研生成专家 / PRD生成专家 / write-a-prd
 ├── 原型设计 → 
 │   ├── PC端 → 看板风格 / 系统风格 / 简约风格
 │   └── APP端 → 国网风 / 弥散风 / 苹果风
+├── 交互设计 → interaction-design / request-analyzer
 ├── 测试验证 → 功能测试 / 自动化测试 / 文档质量校验
 ├── PPT制作 → 06-PPT设计/ 选择对应风格专家
+├── 产品优化 → ab-test-setup / analytics-tracking / onboarding-cro
+├── Skill开发 → skill-creator / github-skill-forge
 └── 通用任务 → PPT生成 / 周报生成 / 提示词生成 / 网页生成
 ```
 
@@ -368,7 +369,7 @@ AI智能体配置模板套件/
 
 **A**: 
 - **专家（27个）**: 定义AI的角色和行为模式，通过提示词实现
-- **Skill（68个）**: 提供具体功能能力，通过MCP或脚本实现
+- **Skill（55个）**: 提供具体功能能力，通过MCP或脚本实现
 - **关系**: 专家可以调用Skill来完成任务
 
 ### Q4: 如何更新到最新版本？
@@ -389,6 +390,62 @@ AI智能体配置模板套件/
 ---
 
 ## 🔄 版本更新日志
+
+### v3.3.3 (2026-03-19)
+
+**新增功能**：
+- ✅ **新增工具与集成开发类 Skills**: 4个专业工具开发技能
+- ✅ **Skill库扩容**: 从50个Skill扩展到55个Skill
+- ✅ **新增技能分类**: 工具与集成开发类别（4个Skills）
+- ✅ **恢复 skill-creator**: 从 anthropics/skills 重新安装官方版
+
+**新增Skills列表**：
+- **工具与集成开发**（4个）:
+  - interaction-design（交互设计模式与最佳实践 - 来自 wshobson/agents）
+  - request-analyzer（请求分析与优化 - 来自 staruhub/claudeskills）
+  - github-skill-forge（从 GitHub 仓库创建 Skills - 来自 yujunzhixue/github-skill-forge）
+  - scrapling-skills（网页爬虫与数据提取 - 来自 d4vinci/scrapling）
+- **恢复**:
+  - skill-creator（Skill 创建完整指南 - 来自 anthropics/skills, 96.9K installs）
+
+### v3.3.2 (2026-03-19)
+
+**新增功能**：
+- ✅ **新增产品管理与营销类 Skills**: 4个专业产品管理与营销技能
+- ✅ **Skill库扩容**: 从46个Skill扩展到50个Skill
+- ✅ **新增技能分类**: 产品管理与营销类别（4个Skills）
+
+**新增Skills列表**：
+- **产品管理与营销**（4个）:
+  - write-a-prd（编写产品需求文档 - 来自 mattpocock/skills）
+  - ab-test-setup（A/B 测试设置与分析 - 来自 coreyhaines31/marketingskills）
+  - analytics-tracking（数据分析与追踪配置 - 来自 coreyhaines31/marketingskills）
+  - onboarding-cro（用户引导流程优化 - 来自 coreyhaines31/marketingskills）
+
+### v3.3.1 (2026-03-19)
+
+**重大更新**：
+- ✅ **Skill库精简优化**: 从68个Skill精简到46个专业Skill
+- ✅ **删除冗余Skills**: 移除22个低频或功能重复的Skills
+- ✅ **GitHub源验证**: 全部46个Skills已从GitHub官方源验证一致
+- ✅ **依赖精简**: 去除钉钉、Obsidian、NotebookLM等特定平台集成
+- ✅ **分类优化**: 从13大类优化为10大类，结构更清晰
+
+**保留的Skills (46个)**:
+- 核心工作流程 (7): using-superpowers, brainstorming, writing-plans, executing-plans, planning-with-files, create-plan, find-skills
+- 开发方法论 (7): test-driven-development, systematic-debugging, requesting-code-review, receiving-code-review, finishing-a-development-branch, verification-before-completion, using-git-worktrees
+- 上下文工程 (6): context-fundamentals, context-optimization, context-compression, context-degradation, filesystem-context, memory-systems
+- 多智能体架构 (5): multi-agent-patterns, dispatching-parallel-agents, subagent-driven-development, hosted-agents, bdi-mental-states
+- 工具设计与集成 (3): tool-design, mcp-builder, project-development
+- 评估与质量 (1): advanced-evaluation
+- 文件格式处理 (4): file-reader, pptx, pdf, xlsx
+- 前端与设计 (5): frontend-design, ui-ux-pro-max, theme-factory, algorithmic-art, web-artifacts-builder
+- 内容创作 (2): doc-coauthoring, writing-skills
+- 网络搜索 (3): web-search, tavily, summarize
+- 自动化工具 (3): imap-smtp-email, skill-vetter, agent-browser
+
+**删除的Skills (22个)**:
+evaluation, memory-setup, skill-creator, docx, canvas-design, internal-comms, technology-news-search, playwright, scheduled-task, self-improving, multimodal, specify-init-helper, obsidian-markdown, obsidian-bases, json-canvas, notebooklm, slack-gif-creator, remotion, brand-guidelines, webapp-testing, dingtalk-docs, dingtalk-ai-table
 
 ### v3.3.0 (2026-03-09)
 
@@ -481,8 +538,8 @@ AI智能体配置模板套件/
 ## 📞 联系方式
 
 - **项目维护**: yuhang
-- **最后更新**: 2026-02-01
-- **文档版本**: v3.0.0
+- **最后更新**: 2026-03-19
+- **文档版本**: v3.3.3
 
 ---
 

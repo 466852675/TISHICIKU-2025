@@ -1,6 +1,6 @@
 ---
 name: context-compression
-description: This skill should be used when the user asks to "compress context", "summarize conversation history", "implement compaction", "reduce token usage", or mentions context compression, structured summarization, tokens-per-task optimization, or long-running agent sessions exceeding context limits.
+description: This skill should be used when the user asks to "compress context", "summarize conversation history", "implement compaction", "reduce token usage", or mentions context compression, structured summarization, tokens-per-task optimization, or long-running agent sessions...
 ---
 
 # Context Compression Strategies
@@ -242,7 +242,7 @@ This skill connects to several others in the collection:
 ## References
 
 Internal reference:
-- [Evaluation Framework Reference](./references/evaluation-framework.md) - Detailed probe types and scoring rubrics
+- Evaluation Framework Reference - Detailed probe types and scoring rubrics
 
 Related skills in this collection:
 - context-degradation - Understanding what compression prevents

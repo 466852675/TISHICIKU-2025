@@ -2,7 +2,7 @@
 > 一套完整的 Claude Skill 集合，用于扩展 AI 智能体的专业能力
 
 ## 简介
-本 Skill 库包含 **67 个专业 Skill**，涵盖软件开发、上下文工程、多智能体架构、文件处理、前端设计、网络搜索、自动化工具、钉钉集成等多个领域。每个 Skill 都是自包含的知识包，为 Claude 提供特定领域的专业指导、工作流程和工具集成。
+本 Skill 库包含 **55 个专业 Skill**，涵盖软件开发、上下文工程、多智能体架构、文件处理、前端设计、网络搜索、自动化工具、产品管理与营销、工具与集成开发等多个领域。每个 Skill 都是自包含的知识包，为 Claude 提供特定领域的专业指导、工作流程和工具集成。
 
 ## 快速开始
 ### 对于 Claude
@@ -46,7 +46,7 @@ Claude 会在每次对话开始时自动读取本目录下的 `CLAUDE.md` 文件
 | **verification-before-completion** | 完成前的验证检查 |
 | **using-git-worktrees** | 使用 Git Worktrees 进行隔离开发 |
 
-### 上下文工程（7 个）
+### 上下文工程（6 个）
 
 | Skill | 用途 |
 |-------|------|
@@ -56,7 +56,6 @@ Claude 会在每次对话开始时自动读取本目录下的 `CLAUDE.md` 文件
 | **context-degradation** | 上下文退化诊断与修复 |
 | **filesystem-context** | 文件系统上下文管理 |
 | **memory-systems** | 智能体内存系统 |
-| **memory-setup** | 配置持久化内存搜索 |
 
 ### 多智能体架构（5 个）
 
@@ -76,78 +75,72 @@ Claude 会在每次对话开始时自动读取本目录下的 `CLAUDE.md` 文件
 | **mcp-builder** | MCP（Model Context Protocol）服务器开发 |
 | **project-development** | LLM 项目开发方法论 |
 
-### 评估与质量（2 个）
+### 评估与质量（1 个）
 
 | Skill | 用途 |
 |-------|------|
-| **evaluation** | 智能体评估框架 |
 | **advanced-evaluation** | 高级评估技术（LLM-as-judge） |
 
-### 文件格式处理（5 个）
+### 文件格式处理（4 个）
 
 | Skill | 用途 |
 |-------|------|
 | **file-reader** | 通用文件读取器（Excel、Word、PPT、PDF 等） |
-| **docx** | Microsoft Word 文档处理 |
-| **xlsx** | Microsoft Excel 表格处理 |
 | **pptx** | Microsoft PowerPoint 演示文稿 |
 | **pdf** | PDF 文档处理 |
+| **xlsx** | Microsoft Excel 表格处理 |
 
-### 前端与设计（6 个）
+### 前端与设计（5 个）
 
 | Skill | 用途 |
 |-------|------|
 | **frontend-design** | 前端界面设计 |
 | **ui-ux-pro-max** | UI/UX 专业设计 |
 | **theme-factory** | 主题样式工厂 |
-| **canvas-design** | Canvas 视觉设计 |
 | **algorithmic-art** | 算法艺术与生成艺术 |
 | **web-artifacts-builder** | Web 工件构建器 |
 
-### 内容创作（4 个）
+### 内容创作（3 个）
 
 | Skill | 用途 |
 |-------|------|
 | **doc-coauthoring** | 文档协作编写 |
-| **internal-comms** | 内部沟通写作 |
 | **writing-skills** | Skill 编写指南 |
-| **skill-creator** | Skill 创建完整指南 |
+| **skill-creator** | Skill 创建完整指南（官方版） |
 
-### 网络搜索与信息获取（4 个）
+### 网络搜索与信息获取（3 个）
 
 | Skill | 用途 |
 |-------|------|
-| **web-search** | 实时网页搜索（Playwright 驱动） |
+| **web-search** | 实时网页搜索（inference.sh CLI） |
 | **tavily** | Tavily AI 优化搜索 API |
-| **technology-news-search** | 实时科技新闻搜索聚合 |
 | **summarize** | 总结 URL、文件和 YouTube 内容 |
 
-### 自动化与工具（6 个）
+### 自动化与工具（3 个）
 
 | Skill | 用途 |
 |-------|------|
-| **playwright** | Playwright 浏览器自动化 |
 | **imap-smtp-email** | IMAP/SMTP 邮件收发 |
-| **scheduled-task** | 定时任务创建与管理 |
-| **self-improving** | 自我改进与反思学习 |
 | **skill-vetter** | Skill 安全检查与审查 |
 | **agent-browser** | 浏览器自动化 CLI |
 
-### 平台集成（11 个）
+### 产品管理与营销（4 个）
 
 | Skill | 用途 |
 |-------|------|
-| **specify-init-helper** | Specify 项目初始化辅助 |
-| **obsidian-markdown** | Obsidian 风格 Markdown |
-| **obsidian-bases** | Obsidian Bases 数据库 |
-| **json-canvas** | JSON Canvas 可视化 |
-| **notebooklm** | Google NotebookLM 集成 |
-| **slack-gif-creator** | Slack 优化 GIF 创建 |
-| **remotion** | Remotion 视频制作 |
-| **brand-guidelines** | Anthropic 品牌指南 |
-| **webapp-testing** | Web 应用测试 |
-| **dingtalk-docs** | 钉钉文档操作 |
-| **dingtalk-ai-table** | 钉钉 AI 表格操作 |
+| **write-a-prd** | 编写产品需求文档（PRD） |
+| **ab-test-setup** | A/B 测试设置与分析 |
+| **analytics-tracking** | 数据分析与追踪配置 |
+| **onboarding-cro** | 用户引导流程优化 |
+
+### 工具与集成开发（4 个）
+
+| Skill | 用途 |
+|-------|------|
+| **interaction-design** | 交互设计模式与最佳实践 |
+| **request-analyzer** | 请求分析与优化 |
+| **github-skill-forge** | 从 GitHub 仓库创建 Skills |
+| **scrapling-skills** | 网页爬虫与数据提取 |
 
 ## Skill 结构
 
@@ -225,7 +218,7 @@ Claude：
 
 ## 创建新 Skill
 
-参考 [skill-creator](skill-creator/SKILL.md) 获取完整的 Skill 创建指南。
+参考 [writing-skills](writing-skills/SKILL.md) 获取完整的 Skill 创建指南。
 
 ### 快速步骤
 1. 创建目录 `my-skill/`
@@ -255,9 +248,9 @@ Claude：
 ## 相关资源
 
 - [CLAUDE.md](CLAUDE.md) - Claude 使用的完整 Skill 库参考
-- [skill-creator/SKILL.md](skill-creator/SKILL.md) - Skill 创建指南
+- [writing-skills/SKILL.md](writing-skills/SKILL.md) - Skill 创建指南
 - [using-superpowers/SKILL.md](using-superpowers/SKILL.md) - Skill 使用规则
 
 ---
 
-> **提示**：本 Skill 库持续更新中。如需新增 Skill 或改进现有 Skill，请参考 skill-creator 指南。
+> **提示**：本 Skill 库持续更新中。所有 Skills 均已从 GitHub 官方源验证一致。如需新增 Skill 或改进现有 Skill，请参考 writing-skills 指南。

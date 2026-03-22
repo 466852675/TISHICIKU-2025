@@ -139,21 +139,6 @@ async function testConnection() {
   }
 }
 
-// Verify SMTP connection without sending email
-async function verifyConnection() {
-  const transporter = createTransporter();
-
-  try {
-    await transporter.verify();
-    return {
-      success: true,
-      message: 'SMTP verification successful',
-    };
-  } catch (err) {
-    throw new Error(`SMTP verify failed: ${err.message}`);
-  }
-}
-
 // Main CLI handler
 async function main() {
   const { command, options, positional } = parseArgs();
@@ -199,18 +184,13 @@ async function main() {
         result = await testConnection();
         break;
 
-      case 'verify':
-        result = await verifyConnection();
-        break;
-
       default:
         console.error('Unknown command:', command);
-        console.error('Available commands: send, test, verify');
+        console.error('Available commands: send, test');
         console.error('\nUsage:');
         console.error('  send   --to <email> --subject <text> [--body <text>] [--html] [--cc <email>] [--bcc <email>] [--attach <file>]');
         console.error('  send   --to <email> --subject <text> --body-file <file> [--html-file <file>] [--attach <file>]');
         console.error('  test   Test SMTP connection');
-        console.error('  verify Verify SMTP connection without sending email');
         process.exit(1);
     }
 

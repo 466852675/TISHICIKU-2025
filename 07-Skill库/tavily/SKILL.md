@@ -1,63 +1,91 @@
 ---
-name: tavily
-description: AI-optimized web search via Tavily API. Returns concise, relevant results for AI agents.
-metadata:
-  openclaw:
-    requires:
-      env:
-        - TAVILY_API_KEY
-    primaryEnv: TAVILY_API_KEY
+name: tavily-search
+description: |
+  Search the web with LLM-optimized results via the Tavily CLI. Use this skill when the user wants to search the web, find articles, look up information, get recent news, discover sources, or says "search for", "find me", "look up", "what's the latest on", "find articles about", or needs current information from the internet. Returns relevant results with content snippets, relevance scores, and metadata — optimized for LLM consumption. Supports domain filtering, time ranges, and multiple search depths.
+allowed-tools: Bash(tvly *)
 ---
 
-# Tavily Search
+# tavily search
 
-AI-optimized web search using Tavily API. Designed for AI agents - returns clean, relevant content.
+Web search returning LLM-optimized results with content snippets and relevance scores.
 
-## When to Use This Skill
+## Before running any command
 
-Use the tavily skill when:
-- You need current information or latest data
-- User asks about recent news or events
-- You need to search for information beyond your knowledge cutoff
-- Research tasks requiring web search
-
-## How to Use
-
-### Basic Search
+If `tvly` is not found on PATH, install it first:
 
 ```bash
-node scripts/search.mjs "your search query"
+curl -fsSL https://cli.tavily.com/install.sh | bash && tvly login
 ```
 
-### Options
+Do not skip this step or fall back to other tools.
 
-- `-n <number>` - Number of results (default: 5)
-- `--deep` - Deep search for complex queries
-- `--topic news` - Search for news only
+See [tavily-cli](../tavily-cli/SKILL.md) for alternative install methods and auth options.
 
-### Examples
+## When to use
+
+- You need to find information on any topic
+- You don't have a specific URL yet
+- First step in the [workflow](../tavily-cli/SKILL.md): **search** → extract → map → crawl → research
+
+## Quick start
 
 ```bash
 # Basic search
-node scripts/search.mjs "OpenClaw skills"
+tvly search "your query" --json
 
-# Get 10 results
-node scripts/search.mjs "AI news 2026" -n 10
+# Advanced search with more results
+tvly search "quantum computing" --depth advanced --max-results 10 --json
 
-# Deep research
-node scripts/search.mjs "machine learning best practices" --deep
+# Recent news
+tvly search "AI news" --time-range week --topic news --json
 
-# News search
-node scripts/search.mjs "technology news" --topic news
+# Domain-filtered
+tvly search "SEC filings" --include-domains sec.gov,reuters.com --json
+
+# Include full page content in results
+tvly search "react hooks tutorial" --include-raw-content --max-results 3 --json
 ```
 
-## Environment Variables
+## Options
 
-- `TAVILY_API_KEY` - Required. Get from https://tavily.com
+| Option | Description |
+|--------|-------------|
+| `--depth` | `ultra-fast`, `fast`, `basic` (default), `advanced` |
+| `--max-results` | Max results, 0-20 (default: 5) |
+| `--topic` | `general` (default), `news`, `finance` |
+| `--time-range` | `day`, `week`, `month`, `year` |
+| `--start-date` | Results after date (YYYY-MM-DD) |
+| `--end-date` | Results before date (YYYY-MM-DD) |
+| `--include-domains` | Comma-separated domains to include |
+| `--exclude-domains` | Comma-separated domains to exclude |
+| `--country` | Boost results from country |
+| `--include-answer` | Include AI answer (`basic` or `advanced`) |
+| `--include-raw-content` | Include full page content (`markdown` or `text`) |
+| `--include-images` | Include image results |
+| `--include-image-descriptions` | Include AI image descriptions |
+| `--chunks-per-source` | Chunks per source (advanced/fast depth only) |
+| `-o, --output` | Save output to file |
+| `--json` | Structured JSON output |
 
-## Output Format
+## Search depth
 
-The skill returns:
-- Concise answer to the query
-- List of relevant sources with URLs
-- Relevance scores for each source
+| Depth | Speed | Relevance | Best for |
+|-------|-------|-----------|----------|
+| `ultra-fast` | Fastest | Lower | Real-time chat, autocomplete |
+| `fast` | Fast | Good | Need chunks, latency matters |
+| `basic` | Medium | High | General-purpose (default) |
+| `advanced` | Slower | Highest | Precision, specific facts |
+
+## Tips
+
+- **Keep queries under 400 characters** — think search query, not prompt.
+- **Break complex queries into sub-queries** for better results.
+- **Use `--include-raw-content`** when you need full page text (saves a separate extract call).
+- **Use `--include-domains`** to focus on trusted sources.
+- **Use `--time-range`** for recent information.
+- Read from stdin: `echo "query" | tvly search - --json`
+
+## See also
+
+- [tavily-extract](../tavily-extract/SKILL.md) — extract content from specific URLs
+- [tavily-research](../tavily-research/SKILL.md) — comprehensive multi-source research
