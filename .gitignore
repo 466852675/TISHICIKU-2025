@@ -10,3 +10,7 @@
 
 # Trae IDE local files
 .trae
+
+# Environment variables (contains sensitive data)
+.env
+**/.env
