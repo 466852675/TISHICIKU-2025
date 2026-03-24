@@ -2,7 +2,7 @@
 > 一套完整的 Claude Skill 集合，用于扩展 AI 智能体的专业能力
 
 ## 简介
-本 Skill 库包含 **55 个专业 Skill**，涵盖软件开发、上下文工程、多智能体架构、文件处理、前端设计、网络搜索、自动化工具、产品管理与营销、工具与集成开发等多个领域。每个 Skill 都是自包含的知识包，为 Claude 提供特定领域的专业指导、工作流程和工具集成。
+本 Skill 库包含 **44 个专业 Skill**，涵盖软件开发、上下文工程、多智能体架构、文件处理、前端设计、网络搜索、自动化工具、产品管理与营销、工具与集成开发等多个领域。每个 Skill 都是自包含的知识包，为 Claude 提供特定领域的专业指导、工作流程和工具集成。
 
 ## 快速开始
 ### 对于 Claude
@@ -22,17 +22,16 @@ Claude 会在每次对话开始时自动读取本目录下的 `CLAUDE.md` 文件
 
 ## Skill 目录
 
-### 核心工作流程（7 个）
+### 核心工作流程（6 个）
 
 | Skill | 用途 |
 |-------|------|
 | **using-superpowers** | Skill 系统的基础规则，每次对话开始时使用 |
 | **brainstorming** | 将想法转化为完整设计，任何创造性工作前使用 |
 | **writing-plans** | 编写详细的实施计划 |
-| **executing-plans** | 执行已编写的计划 |
 | **planning-with-files** | 使用文件进行复杂任务规划 |
-| **create-plan** | 创建简洁的任务计划 |
-| **find-skills** | 发现和安装智能体 skill |
+| **skill-creator** | Skill 创建完整指南（官方版） |
+| **write-a-prd** | 编写产品需求文档（PRD） |
 
 ### 开发方法论（7 个）
 
@@ -46,18 +45,14 @@ Claude 会在每次对话开始时自动读取本目录下的 `CLAUDE.md` 文件
 | **verification-before-completion** | 完成前的验证检查 |
 | **using-git-worktrees** | 使用 Git Worktrees 进行隔离开发 |
 
-### 上下文工程（6 个）
+### 上下文工程（2 个）
 
 | Skill | 用途 |
 |-------|------|
-| **context-fundamentals** | 上下文工程基础概念 |
 | **context-optimization** | 上下文优化技术 |
 | **context-compression** | 上下文压缩与总结 |
-| **context-degradation** | 上下文退化诊断与修复 |
-| **filesystem-context** | 文件系统上下文管理 |
-| **memory-systems** | 智能体内存系统 |
 
-### 多智能体架构（5 个）
+### 多智能体架构（4 个）
 
 | Skill | 用途 |
 |-------|------|
@@ -65,7 +60,6 @@ Claude 会在每次对话开始时自动读取本目录下的 `CLAUDE.md` 文件
 | **dispatching-parallel-agents** | 并行智能体调度 |
 | **subagent-driven-development** | 子智能体驱动开发 |
 | **hosted-agents** | 托管智能体与沙盒环境 |
-| **bdi-mental-states** | BDI（信念-欲望-意图）心理状态建模 |
 
 ### 工具设计与集成（3 个）
 
@@ -81,40 +75,37 @@ Claude 会在每次对话开始时自动读取本目录下的 `CLAUDE.md` 文件
 |-------|------|
 | **advanced-evaluation** | 高级评估技术（LLM-as-judge） |
 
-### 文件格式处理（4 个）
+### 文件格式处理（3 个）
 
 | Skill | 用途 |
 |-------|------|
 | **file-reader** | 通用文件读取器（Excel、Word、PPT、PDF 等） |
 | **pptx** | Microsoft PowerPoint 演示文稿 |
 | **pdf** | PDF 文档处理 |
-| **xlsx** | Microsoft Excel 表格处理 |
 
-### 前端与设计（5 个）
+### 前端与设计（4 个）
 
 | Skill | 用途 |
 |-------|------|
 | **frontend-design** | 前端界面设计 |
 | **ui-ux-pro-max** | UI/UX 专业设计 |
 | **theme-factory** | 主题样式工厂 |
-| **algorithmic-art** | 算法艺术与生成艺术 |
 | **web-artifacts-builder** | Web 工件构建器 |
 
-### 内容创作（3 个）
+### 内容创作（2 个）
 
 | Skill | 用途 |
 |-------|------|
 | **doc-coauthoring** | 文档协作编写 |
 | **writing-skills** | Skill 编写指南 |
-| **skill-creator** | Skill 创建完整指南（官方版） |
 
 ### 网络搜索与信息获取（3 个）
 
 | Skill | 用途 |
 |-------|------|
-| **web-search** | 实时网页搜索（inference.sh CLI） |
-| **tavily** | Tavily AI 优化搜索 API |
 | **summarize** | 总结 URL、文件和 YouTube 内容 |
+| **tavily** | Tavily AI 优化搜索 API |
+| **weather** | 天气信息查询 |
 
 ### 自动化与工具（3 个）
 
@@ -122,25 +113,22 @@ Claude 会在每次对话开始时自动读取本目录下的 `CLAUDE.md` 文件
 |-------|------|
 | **imap-smtp-email** | IMAP/SMTP 邮件收发 |
 | **skill-vetter** | Skill 安全检查与审查 |
-| **agent-browser** | 浏览器自动化 CLI |
+| **scrapling-skills** | 网页爬虫与数据提取 |
 
-### 产品管理与营销（4 个）
-
-| Skill | 用途 |
-|-------|------|
-| **write-a-prd** | 编写产品需求文档（PRD） |
-| **ab-test-setup** | A/B 测试设置与分析 |
-| **analytics-tracking** | 数据分析与追踪配置 |
-| **onboarding-cro** | 用户引导流程优化 |
-
-### 工具与集成开发（4 个）
+### 工具与集成开发（3 个）
 
 | Skill | 用途 |
 |-------|------|
 | **interaction-design** | 交互设计模式与最佳实践 |
 | **request-analyzer** | 请求分析与优化 |
 | **github-skill-forge** | 从 GitHub 仓库创建 Skills |
-| **scrapling-skills** | 网页爬虫与数据提取 |
+
+### 产品管理与营销（2 个）
+
+| Skill | 用途 |
+|-------|------|
+| **ab-test-setup** | A/B 测试设置与分析 |
+| **analytics-tracking** | 数据分析与追踪配置 |
 
 ## Skill 结构
 
@@ -253,4 +241,4 @@ Claude：
 
 ---
 
-> **提示**：本 Skill 库持续更新中。所有 Skills 均已从 GitHub 官方源验证一致。如需新增 Skill 或改进现有 Skill，请参考 writing-skills 指南。
+> **提示**：本 Skill 库持续更新中。如需新增 Skill 或改进现有 Skill，请参考 writing-skills 指南。
