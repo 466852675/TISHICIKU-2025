@@ -45,12 +45,13 @@ Claude 会在每次对话开始时自动读取本目录下的 `CLAUDE.md` 文件
 | **verification-before-completion** | 完成前的验证检查 |
 | **using-git-worktrees** | 使用 Git Worktrees 进行隔离开发 |
 
-### 上下文工程（2 个）
+### 上下文工程（3 个）
 
 | Skill | 用途 |
 |-------|------|
 | **context-optimization** | 上下文优化技术 |
 | **context-compression** | 上下文压缩与总结 |
+| **memory-systems** | 短期、长期和图结构化内存架构设计 |
 
 ### 多智能体架构（4 个）
 
@@ -75,7 +76,7 @@ Claude 会在每次对话开始时自动读取本目录下的 `CLAUDE.md` 文件
 |-------|------|
 | **advanced-evaluation** | 高级评估技术（LLM-as-judge） |
 
-### 文件格式处理（9 个）
+### 文件格式处理（5 个）
 
 | Skill | 用途 |
 |-------|------|
@@ -85,16 +86,15 @@ Claude 会在每次对话开始时自动读取本目录下的 `CLAUDE.md` 文件
 | **minimax-pdf** | PDF 文档生成 |
 | **minimax-docx** | Word 文档生成 |
 
-### 前端与设计（9 个）
+### 前端与设计（8 个）
 
 | Skill | 用途 |
 |-------|------|
 | **frontend-design** | 前端界面设计 |
-| **frontend-dev** | 前端开发与媒体生成 |
-| **fullstack-dev** | 全栈开发（前后端集成） |
 | **ui-ux-pro-max** | UI/UX 专业设计 |
 | **theme-factory** | 主题样式工厂 |
 | **web-artifacts-builder** | Web 工件构建器 |
+| **frontend-dev** | 前端开发与媒体生成 |
 | **android-native-dev** | Android 原生应用开发 |
 | **ios-application-dev** | iOS 应用开发 |
 | **shader-dev** | Shader 着色器开发 |
@@ -113,13 +113,13 @@ Claude 会在每次对话开始时自动读取本目录下的 `CLAUDE.md` 文件
 | **tavily** | Tavily AI 优化搜索 API |
 | **weather** | 天气信息查询 |
 
-### 自动化与工具（4 个）
+### 自动化与工具（3 个）
 
 | Skill | 用途 |
 |-------|------|
 | **imap-smtp-email** | IMAP/SMTP 邮件收发 |
 | **skill-vetter** | Skill 安全检查与审查 |
-| **scrapling-skills** | 网页爬虫与数据提取（Scrapling） |
+| **scrapling-skills** | 网页爬虫与数据提取 |
 
 ### 工具与集成开发（3 个）
 
