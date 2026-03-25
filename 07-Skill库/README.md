@@ -2,7 +2,7 @@
 > 一套完整的 Claude Skill 集合，用于扩展 AI 智能体的专业能力
 
 ## 简介
-本 Skill 库包含 **44 个专业 Skill**，涵盖软件开发、上下文工程、多智能体架构、文件处理、前端设计、网络搜索、自动化工具、产品管理与营销、工具与集成开发等多个领域。每个 Skill 都是自包含的知识包，为 Claude 提供特定领域的专业指导、工作流程和工具集成。
+本 Skill 库包含 **50 个专业 Skill**，涵盖软件开发、上下文工程、多智能体架构、文件处理、前端设计、网络搜索、自动化工具、产品管理与营销、工具与集成开发等多个领域。每个 Skill 都是自包含的知识包，为 Claude 提供特定领域的专业指导、工作流程和工具集成。
 
 ## 快速开始
 ### 对于 Claude
@@ -75,22 +75,29 @@ Claude 会在每次对话开始时自动读取本目录下的 `CLAUDE.md` 文件
 |-------|------|
 | **advanced-evaluation** | 高级评估技术（LLM-as-judge） |
 
-### 文件格式处理（3 个）
+### 文件格式处理（9 个）
 
 | Skill | 用途 |
 |-------|------|
 | **file-reader** | 通用文件读取器（Excel、Word、PPT、PDF 等） |
-| **pptx** | Microsoft PowerPoint 演示文稿 |
-| **pdf** | PDF 文档处理 |
+| **pptx-generator** | PPT 文档生成 |
+| **minimax-xlsx** | Microsoft Excel 表格处理 |
+| **minimax-pdf** | PDF 文档生成 |
+| **minimax-docx** | Word 文档生成 |
 
-### 前端与设计（4 个）
+### 前端与设计（9 个）
 
 | Skill | 用途 |
 |-------|------|
 | **frontend-design** | 前端界面设计 |
+| **frontend-dev** | 前端开发与媒体生成 |
+| **fullstack-dev** | 全栈开发（前后端集成） |
 | **ui-ux-pro-max** | UI/UX 专业设计 |
 | **theme-factory** | 主题样式工厂 |
 | **web-artifacts-builder** | Web 工件构建器 |
+| **android-native-dev** | Android 原生应用开发 |
+| **ios-application-dev** | iOS 应用开发 |
+| **shader-dev** | Shader 着色器开发 |
 
 ### 内容创作（2 个）
 
@@ -99,21 +106,20 @@ Claude 会在每次对话开始时自动读取本目录下的 `CLAUDE.md` 文件
 | **doc-coauthoring** | 文档协作编写 |
 | **writing-skills** | Skill 编写指南 |
 
-### 网络搜索与信息获取（3 个）
+### 网络搜索与信息获取（2 个）
 
 | Skill | 用途 |
 |-------|------|
-| **summarize** | 总结 URL、文件和 YouTube 内容 |
 | **tavily** | Tavily AI 优化搜索 API |
 | **weather** | 天气信息查询 |
 
-### 自动化与工具（3 个）
+### 自动化与工具（4 个）
 
 | Skill | 用途 |
 |-------|------|
 | **imap-smtp-email** | IMAP/SMTP 邮件收发 |
 | **skill-vetter** | Skill 安全检查与审查 |
-| **scrapling-skills** | 网页爬虫与数据提取 |
+| **scrapling-skills** | 网页爬虫与数据提取（Scrapling） |
 
 ### 工具与集成开发（3 个）
 

@@ -1,6 +1,6 @@
-# AI智能体配置模板套件 v3.3
+# AI智能体配置模板套件 v3.3.4
 
-> 🚀 **通用多IDE支持** | **27个专业提示词专家** | **44个Skill功能** | **100+工具资源**
+> 🚀 **通用多IDE支持** | **27个专业提示词专家** | **50个Skill功能** | **100+工具资源**
 
 **一套配置，全平台通用** - 支持 Trae、Cursor、Windsurf、GitHub Copilot、CodeGeeX、JetBrains AI 等16+主流AI编程工具
 
@@ -12,7 +12,7 @@
 |------|------|------|
 | 🛠️ **多IDE兼容** | 一套配置适配 Trae/Cursor/Windsurf/Copilot 等主流IDE | 7+ IDE |
 | 🧠 **专业提示词专家** | 覆盖需求分析、原型设计、测试验证、PPT设计等专业领域 | **27个** |
-| ⚡ **44个Skill功能** | 文档生成、UI设计、代码开发、测试调试、上下文管理、网络搜索等全覆盖 | **44个** |
+| ⚡ **50个Skill功能** | 文档生成、UI设计、代码开发、测试调试、上下文管理、网络搜索等全覆盖 | **50个** |
 | 📚 **完整学习路径** | 从零基础到精通的系统化教程和实战案例 | 8章+ |
 | 🔧 **开箱即用** | 标准化配置模板，复制粘贴即可使用 | 100% |
 | 🌐 **国内外工具** | 收录国内外主流AI编程工具下载链接 | 100+ |
@@ -98,7 +98,7 @@ AI智能体配置模板套件/
 │   │       └── 【象牙白】智联蓝图手绘工业草图风专家.md
 │   ├── README.md                      # 专家库导航
 │   └── CLAUDE.md                      # 模块说明文档
-├── 07-Skill库/                       # 44个Skill功能库
+├── 07-Skill库/                       # 50个Skill功能库
 │   ├── skills/                        # Skill功能目录
 │   │   ├── docx/                      # Word文档生成
 │   │   ├── pptx/                      # PPT文档生成
@@ -146,7 +146,7 @@ AI智能体配置模板套件/
 1. **选择IDE**：参考 [00-工具安装包](00-工具安装包/) 下载安装
 2. **快速配置**：按照 [02-快速配置](02-快速配置/) 完成基础设置
 3. **使用专家**：从 [06-提示词库](06-提示词库/) 选择专家开始使用
-4. **调用Skill**：使用 [07-Skill库](07-Skill库/) 的44个Skill功能
+4. **调用Skill**：使用 [07-Skill库](07-Skill库/) 的50个Skill功能
 5. **实战练习**：完成 [08-实战案例](08-实战案例/) 中的10个案例
 
 ### 方式二：系统学习路径
@@ -184,7 +184,7 @@ AI智能体配置模板套件/
 
 ---
 
-## ⚡ 44个Skill功能详解
+## ⚡ 51个Skill功能详解
 
 ### Skill分类总览
 
@@ -196,11 +196,11 @@ AI智能体配置模板套件/
 | **多智能体架构** | 4个 | 多代理模式、子智能体、托管智能体 | multi-agent-patterns, dispatching-parallel-agents, subagent-driven-development, hosted-agents |
 | **工具设计与集成** | 3个 | MCP构建、工具设计、项目开发 | tool-design, mcp-builder, project-development |
 | **评估与质量** | 1个 | 性能评估、LLM评判 | advanced-evaluation |
-| **文件格式处理** | 3个 | Word/PPT/PDF读取处理 | file-reader, pptx, pdf |
-| **前端与设计** | 4个 | UI/UX设计、主题、Web工件 | frontend-design, ui-ux-pro-max, theme-factory, web-artifacts-builder |
+| **文件格式处理** | 9个 | Word/PPT/PDF/Excel读取处理 | file-reader, pptx-generator, minimax-xlsx, minimax-pdf, minimax-docx |
+| **前端与设计** | 9个 | UI/UX设计、主题、Web工件、移动端开发、Shader | frontend-design, frontend-dev, fullstack-dev, ui-ux-pro-max, theme-factory, web-artifacts-builder, android-native-dev, ios-application-dev, shader-dev |
 | **内容创作** | 2个 | 文档共创、Skill编写 | doc-coauthoring, writing-skills |
-| **网络搜索** | 3个 | 内容总结、搜索、天气 | summarize, tavily, weather |
-| **自动化与工具** | 3个 | 邮件、Skill审查、网页爬虫 | imap-smtp-email, skill-vetter, scrapling-skills |
+| **网络搜索** | 2个 | 搜索、天气 | tavily, weather |
+| **自动化与工具** | 4个 | 邮件、Skill审查、网页爬虫 | imap-smtp-email, skill-vetter, scrapling-skills |
 | **工具与集成开发** | 3个 | 交互设计、请求分析、GitHub集成 | interaction-design, request-analyzer, github-skill-forge |
 | **产品管理与营销** | 2个 | A/B测试、数据分析 | ab-test-setup, analytics-tracking |
 
@@ -208,10 +208,10 @@ AI智能体配置模板套件/
 
 | IDE | 支持数量 | 支持方式 | 说明 |
 |-----|---------|---------|------|
-| **Trae** | 44/44 | MCP原生 + 脚本 | ⭐ 完整支持所有Skill |
-| **Cursor** | ~35/44 | 脚本 + 部分MCP | ⚠️ 部分Skill需手动配置 |
-| **Windsurf** | ~30/44 | 脚本 | ⚠️ 基础Skill支持 |
-| **Copilot** | ~25/44 | 脚本 | ⚠️ 有限支持 |
+| **Trae** | 51/51 | MCP原生 + 脚本 | ⭐ 完整支持所有Skill |
+| **Cursor** | ~40/51 | 脚本 + 部分MCP | ⚠️ 部分Skill需手动配置 |
+| **Windsurf** | ~35/51 | 脚本 | ⚠️ 基础Skill支持 |
+| **Copilot** | ~30/51 | 脚本 | ⚠️ 有限支持 |
 
 ---
 
@@ -219,7 +219,7 @@ AI智能体配置模板套件/
 
 ### Trae IDE（推荐 ⭐⭐⭐⭐⭐）
 
-**优势**：中文友好、功能完整、44个Skill全支持
+**优势**：中文友好、功能完整、51个Skill全支持
 
 **配置方式**：
 1. **个人规则**：`Settings` → `Rules` → 添加 [04-规则配置/通用配置/个人规则.md](04-规则配置/通用配置/个人规则.md)
@@ -261,10 +261,10 @@ AI智能体配置模板套件/
 
 | 规格项 | 详情 |
 |--------|------|
-| **项目版本** | v3.3.3 |
+| **项目版本** | v3.3.4 |
 | **支持IDE** | Trae、Cursor、Windsurf、GitHub Copilot、Codeium、Amazon CodeWhisperer、JetBrains AI Assistant |
 | **专家数量** | 27个（需求3 + 设计7 + 测试3 + 通用4 + 图表1 + PPT9） |
-| **Skill数量** | 44个（13大类别全覆盖） |
+| **Skill数量** | 50个（13大类别全覆盖） |
 | **工具链接** | 100+（国内外主流AI编程工具） |
 | **实战案例** | 10个完整项目（3基础+4进阶+3高级） |
 | **文档语言** | 中文为主 |
@@ -343,10 +343,10 @@ AI智能体配置模板套件/
 ### Q1: 本套件支持哪些IDE？
 
 **A**: 主要支持 Trae、Cursor、Windsurf、GitHub Copilot。其中：
-- **Trae**: 完整支持所有功能（44个Skill全支持）⭐推荐
-- **Cursor**: 支持大部分功能（~35个Skill）
-- **Windsurf**: 支持基础功能（~30个Skill）
-- **Copilot**: 支持核心功能（~25个Skill）
+- **Trae**: 完整支持所有功能（51个Skill全支持）⭐推荐
+- **Cursor**: 支持大部分功能（~40个Skill）
+- **Windsurf**: 支持基础功能（~35个Skill）
+- **Copilot**: 支持核心功能（~30个Skill）
 
 ### Q2: 如何选择合适的专家？
 
@@ -369,7 +369,7 @@ AI智能体配置模板套件/
 
 **A**: 
 - **专家（27个）**: 定义AI的角色和行为模式，通过提示词实现
-- **Skill（44个）**: 提供具体功能能力，通过MCP或脚本实现
+- **Skill（51个）**: 提供具体功能能力，通过MCP或脚本实现
 - **关系**: 专家可以调用Skill来完成任务
 
 ### Q4: 如何更新到最新版本？
@@ -391,10 +391,34 @@ AI智能体配置模板套件/
 
 ## 🔄 版本更新日志
 
+### v3.3.4 (2026-03-25)
+
+**Skill库调整**:
+- ✅ **Skill目录同步**: 根据实际目录结构调整README文档
+- ✅ **删除 summarize**: 移除内容总结Skill（目录已删除）
+- ✅ **新增10个Skills**: 补充实际存在但未在文档中列出的Skills
+
+**新增Skills列表**:
+- **文件格式处理**（4个）:
+  - pptx-generator（PPT文档生成）
+  - minimax-xlsx（Microsoft Excel表格处理）
+  - minimax-pdf（PDF文档生成）
+  - minimax-docx（Word文档生成）
+- **前端与设计**（4个）:
+  - frontend-dev（前端开发与媒体生成）
+  - fullstack-dev（全栈开发前后端集成）
+  - android-native-dev（Android原生应用开发）
+  - ios-application-dev（iOS应用开发）
+  - shader-dev（Shader着色器开发）
+- **自动化与工具**（1个）:
+  - scrapling-skills（网页爬虫与数据提取）
+
+** Skill总数**: 从51个调整为50个
+
 ### v3.3.3 (2026-03-19)
 
 **新增功能**：
-- ✅ **Skill库更新**: 共计44个专业Skill
+- ✅ **Skill库更新**: 共计51个专业Skill
 - ✅ **新增技能分类**: 工具与集成开发类别（3个Skills）
 - ✅ **恢复 skill-creator**: 从 anthropics/skills 重新安装官方版
 
@@ -536,8 +560,8 @@ evaluation, memory-setup, skill-creator, docx, canvas-design, internal-comms, te
 ## 📞 联系方式
 
 - **项目维护**: yuhang
-- **最后更新**: 2026-03-19
-- **文档版本**: v3.3.3
+- **最后更新**: 2026-03-25
+- **文档版本**: v3.3.4
 
 ---
 
